@@ -40,6 +40,30 @@ app.add_middleware(
 
 
 # ---------------------------------------------------------------------------
+# Root Endpoint
+# ---------------------------------------------------------------------------
+@app.get(
+    "/",
+    tags=["Root"],
+    summary="Información de la API",
+)
+async def root():
+    """Retorna información básica de la API."""
+    return {
+        "nombre": settings.APP_TITLE,
+        "version": settings.APP_VERSION,
+        "descripcion": "API REST para exponer la tabla dbo.MonedaValor de Azure SQL",
+        "docs": "/docs",
+        "redoc": "/redoc",
+        "health": "/health",
+        "endpoints": {
+            "listar": "/api/moneda-valor",
+            "obtener": "/api/moneda-valor/{id}",
+        },
+    }
+
+
+# ---------------------------------------------------------------------------
 # Health Check (sin autenticación)
 # ---------------------------------------------------------------------------
 @app.get(
