@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/7ec911f5-a966-41de-b91a-a5c8d7103e96/resourceGroups/trmpythonback_group/providers/Microsoft.Web/sites/trmpythonback",
+    "appService.deploySubpath": "app"
+}
