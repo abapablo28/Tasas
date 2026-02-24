@@ -1,0 +1,19 @@
+<step title="Incoming Request" date="2026-02-17T20:51:44.975" instance="90145b" url="/api/zipdeploy?isAsync=true" method="POST" type="request" pid="768,1,19" Accept="*/*" Host="trmpythonback-mx.scm.azurewebsites.net" User-Agent="AZURECLI/2.79.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Content-Length="203962" x-ms-client-request-id="6e2d3d1e-0c42-11f1-9d01-00090faa0001" x-ms-artifact-checksum="2da4a6b56ee3583d795befb3e612549a6b8978a179935671522c12a4a7148072" X-ARR-LOG-ID="6e2d3d1e-0c42-11f1-9d01-00090faa0001" CLIENT-IP="181.49.36.50:54925" X-SITE-DEPLOYMENT-ID="trmpythonback-mx" WAS-DEFAULT-HOSTNAME="trmpythonback-mx.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/zipdeploy?isAsync=true" X-Client-IP="181.49.36.50" X-Client-Port="54925" >
+  <step title="Cleanup Xml Logs" date="2026-02-17T20:51:44.977" /><!-- duration: 3ms -->
+  <step title="ZipPushDeploy" date="2026-02-17T20:51:45.030" >
+    <step title="ZipDeploy. Extract zip. Remote build." date="2026-02-17T20:51:45.038" /><!-- duration: 5ms -->
+    <step title="None repository commit" date="2026-02-17T20:51:45.072" >
+      <step title="Commit id: 891bf379-fba0-4b7b-8451-fd9a16b095a8" date="2026-02-17T20:51:45.075" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 4ms -->
+    </step><!-- duration: 10ms -->
+    <step title="Starting PushDeployAsync" date="2026-02-17T20:51:45.090" /><!-- duration: 4ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/c0dc173d-3b37-40ca-a5fb-785ab23bce26.zip" date="2026-02-17T20:51:45.345" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/c0dc173d-3b37-40ca-a5fb-785ab23bce26.zip" date="2026-02-17T20:51:45.349" /><!-- duration: 8ms -->
+    </step><!-- duration: 69ms -->
+    <step title="Removing previous build artifact&apos;s manifest file" date="2026-02-17T20:51:45.421" >
+      <step title="Start deployment in the background" date="2026-02-17T20:51:45.440" >
+        <step title="Acquiring Deployment Lock" date="2026-02-17T20:51:45.460" /><!-- duration: 12ms -->
+        <step title="Acquired Deployment Lock" date="2026-02-17T20:51:45.594" /><!-- duration: 2ms -->
+      </step><!-- duration: 328ms -->
+    </step><!-- duration: 382ms -->
+    <step title="Outgoing response" date="2026-02-17T20:51:45.815" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 4ms -->
+  </step><!-- duration: 791ms -->

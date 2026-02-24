@@ -1,0 +1,698 @@
+2026-02-17T20:20:36.5859513Z    _____                               
+2026-02-17T20:20:36.5885959Z   /  _  \ __________ _________   ____  
+2026-02-17T20:20:36.5887044Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:20:36.5887126Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:20:36.5887163Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:20:36.5887192Z         \/      \/                  \/ 
+2026-02-17T20:20:36.5887255Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:20:36.5887311Z 
+2026-02-17T20:20:36.5887348Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:20:36.5887385Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:20:36.5887424Z Python version   : 3.11.14
+2026-02-17T20:20:36.5887457Z Instance Name    : 10-30-0-180
+2026-02-17T20:20:36.5887509Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:20:36.5887540Z 
+2026-02-17T20:20:36.5887644Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:20:37.5385510Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:20:37.5385872Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:20:37.5385912Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:20:47.5399363Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:20:47.5403620Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:20:47.5487919Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:20:47.5488348Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:20:47.5777285Z 4 added, 0 removed; done.
+2026-02-17T20:20:47.5786072Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:20:47.5869671Z done.
+2026-02-17T20:20:47.5946610Z CA certificates copied and updated successfully.
+2026-02-17T20:20:47.9735600Z Output is compressed. Extracting it...
+2026-02-17T20:20:47.9745593Z Found zstd-compressed tarball.
+2026-02-17T20:20:47.9745832Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e61c9d88215'...
+2026-02-17T20:20:47.9745867Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:20:48.5437672Z App Command Line not configured, will attempt auto-detect
+2026-02-17T20:20:48.5437938Z Starting periodic command scheduler: cron.
+2026-02-17T20:20:48.5438007Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite
+2026-02-17T20:20:48.5438037Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:20:48.5438063Z Build Operation ID: 04710bd79f8ec78d
+2026-02-17T20:20:48.5438105Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:20:52.0183363Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e61c9d88215'
+2026-02-17T20:20:52.0183971Z App path is set to '/tmp/8de6e61c9d88215'
+2026-02-17T20:20:52.0188030Z No framework detected; using default app from /opt/defaultsite
+2026-02-17T20:20:52.0188190Z Generating `gunicorn` command for 'application:app'
+2026-02-17T20:20:53.4792669Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:20:53.9732225Z Using packages from virtual environment antenv located at /tmp/8de6e61c9d88215/antenv.
+2026-02-17T20:20:53.9732821Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e61c9d88215/antenv/lib/python3.11/site-packages'
+2026-02-17T20:20:54.5427100Z [2026-02-17 20:20:54 +0000] [1900] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:20:54.5566632Z [2026-02-17 20:20:54 +0000] [1900] [INFO] Listening at: http://0.0.0.0:8000 (1900)
+2026-02-17T20:20:54.5585925Z [2026-02-17 20:20:54 +0000] [1900] [INFO] Using worker: sync
+2026-02-17T20:20:54.5604145Z [2026-02-17 20:20:54 +0000] [1909] [INFO] Booting worker with pid: 1909
+2026-02-17T20:20:55.5623682Z 169.254.129.1 - - [17/Feb/2026:20:20:55 +0000] "GET /robots933456.txt HTTP/1.1" 404 207 "-" "HealthCheck/1.0"
+2026-02-17T20:20:57.3325412Z 169.254.129.1 - - [17/Feb/2026:20:20:57 +0000] "GET / HTTP/1.1" 200 0 "-" "ReadyForRequest/1.0 (LocalCache)"
+2026-02-17T20:20:57.3511437Z 169.254.129.1 - - [17/Feb/2026:20:20:57 +0000] "GET / HTTP/1.1" 200 0 "-" "ReadyForRequest/1.0 (AppInit)"
+2026-02-17T20:21:28.7060219Z 169.254.129.1 - - [17/Feb/2026:20:21:28 +0000] "GET / HTTP/1.1" 200 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-02-17T20:22:59.2332410Z    _____                               
+2026-02-17T20:22:59.2333673Z   /  _  \ __________ _________   ____  
+2026-02-17T20:22:59.2333744Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:22:59.2333770Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:22:59.2333801Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:22:59.2828507Z         \/      \/                  \/ 
+2026-02-17T20:22:59.2828578Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:22:59.2828605Z 
+2026-02-17T20:22:59.2828643Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:22:59.2828680Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:22:59.2828715Z Python version   : 3.11.14
+2026-02-17T20:22:59.2828759Z Instance Name    : 10-30-0-180
+2026-02-17T20:22:59.2828823Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:22:59.2828848Z 
+2026-02-17T20:22:59.2828877Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:23:01.5963635Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:23:01.6033883Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:23:01.6534912Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:23:17.9185214Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:23:17.9185627Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:23:17.9203422Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:23:17.9208591Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:23:17.9398315Z 4 added, 0 removed; done.
+2026-02-17T20:23:17.9400977Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:23:17.9469310Z done.
+2026-02-17T20:23:17.9731552Z CA certificates copied and updated successfully.
+2026-02-17T20:23:18.6480700Z App Command Line not configured, will attempt auto-detect
+2026-02-17T20:23:19.1234855Z Starting periodic command scheduler: cron.
+2026-02-17T20:23:19.1267233Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite
+2026-02-17T20:23:19.2151179Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:23:19.2163915Z Build Operation ID: 04710bd79f8ec78d
+2026-02-17T20:23:19.2171847Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:23:19.2173085Z Output is compressed. Extracting it...
+2026-02-17T20:23:19.2179727Z Found zstd-compressed tarball.
+2026-02-17T20:23:19.2180946Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e61c9d88215'...
+2026-02-17T20:23:19.2181081Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:23:23.7592354Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e61c9d88215'
+2026-02-17T20:23:23.7592721Z App path is set to '/tmp/8de6e61c9d88215'
+2026-02-17T20:23:23.7600576Z No framework detected; using default app from /opt/defaultsite
+2026-02-17T20:23:23.7607311Z Generating `gunicorn` command for 'application:app'
+2026-02-17T20:23:25.9734761Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:23:27.4652296Z Using packages from virtual environment antenv located at /tmp/8de6e61c9d88215/antenv.
+2026-02-17T20:23:27.4652816Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e61c9d88215/antenv/lib/python3.11/site-packages'
+2026-02-17T20:23:28.3926136Z [2026-02-17 20:23:28 +0000] [1898] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:23:28.4216895Z [2026-02-17 20:23:28 +0000] [1898] [INFO] Listening at: http://0.0.0.0:8000 (1898)
+2026-02-17T20:23:28.4217407Z [2026-02-17 20:23:28 +0000] [1898] [INFO] Using worker: sync
+2026-02-17T20:23:28.4297161Z [2026-02-17 20:23:28 +0000] [1902] [INFO] Booting worker with pid: 1902
+2026-02-17T20:23:30.2946492Z 169.254.129.1 - - [17/Feb/2026:20:23:30 +0000] "GET /robots933456.txt HTTP/1.1" 404 207 "-" "HealthCheck/1.0"
+2026-02-17T20:27:33.7723940Z    _____                               
+2026-02-17T20:27:33.7749680Z   /  _  \ __________ _________   ____  
+2026-02-17T20:27:33.7749839Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:27:33.7749868Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:27:33.7749894Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:27:33.7749930Z         \/      \/                  \/ 
+2026-02-17T20:27:33.7750001Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:27:33.7750024Z 
+2026-02-17T20:27:33.7750057Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:27:33.7750084Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:27:33.7750113Z Python version   : 3.11.14
+2026-02-17T20:27:33.7750138Z Instance Name    : 10-30-0-180
+2026-02-17T20:27:33.7750174Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:27:33.7750212Z 
+2026-02-17T20:27:33.7750238Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:27:41.2695900Z 169.254.129.1 - - [17/Feb/2026:20:27:41 +0000] "GET / HTTP/1.1" 200 0 "https://sandbox-4.reactblade.portal.azure.net/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-02-17T20:27:46.1952913Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:27:46.4313817Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:27:46.8160043Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:28:10.9876884Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:28:10.9904102Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:28:10.9904309Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:28:10.9917595Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:28:11.0100699Z 4 added, 0 removed; done.
+2026-02-17T20:28:11.0111012Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:28:11.0162977Z done.
+2026-02-17T20:28:11.0243101Z CA certificates copied and updated successfully.
+2026-02-17T20:28:11.0833871Z Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 --chdir app main:app
+2026-02-17T20:28:11.1893341Z Starting periodic command scheduler: cron.
+2026-02-17T20:28:11.1904553Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 --chdir app main:app'
+2026-02-17T20:28:11.2707760Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:28:11.2732585Z Build Operation ID: 04710bd79f8ec78d
+2026-02-17T20:28:11.2745922Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:28:11.2748498Z Output is compressed. Extracting it...
+2026-02-17T20:28:11.2768095Z Found zstd-compressed tarball.
+2026-02-17T20:28:11.2768432Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e61c9d88215'...
+2026-02-17T20:28:11.2768474Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:28:13.8476164Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e61c9d88215'
+2026-02-17T20:28:13.8512394Z App path is set to '/tmp/8de6e61c9d88215'
+2026-02-17T20:28:15.6240921Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:28:15.9126362Z Using packages from virtual environment antenv located at /tmp/8de6e61c9d88215/antenv.
+2026-02-17T20:28:15.9126758Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e61c9d88215/antenv/lib/python3.11/site-packages'
+2026-02-17T20:28:16.3460407Z [2026-02-17 20:28:16 +0000] [1899] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:28:16.3470461Z [2026-02-17 20:28:16 +0000] [1899] [INFO] Listening at: http://0.0.0.0:8000 (1899)
+2026-02-17T20:28:16.3471272Z [2026-02-17 20:28:16 +0000] [1899] [INFO] Using worker: sync
+2026-02-17T20:28:16.3521363Z [2026-02-17 20:28:16 +0000] [1901] [INFO] Booting worker with pid: 1901
+2026-02-17T20:28:19.0680789Z [2026-02-17 20:28:19 +0000] [1901] [ERROR] Exception in worker process
+2026-02-17T20:28:19.0681601Z Traceback (most recent call last):
+2026-02-17T20:28:19.0681717Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-02-17T20:28:19.0681753Z     worker.init_process()
+2026-02-17T20:28:19.0681791Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-02-17T20:28:19.0685705Z     self.load_wsgi()
+2026-02-17T20:28:19.0685756Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-02-17T20:28:19.0685788Z     self.wsgi = self.app.wsgi()
+2026-02-17T20:28:19.0685821Z                 ^^^^^^^^^^^^^^^
+2026-02-17T20:28:19.0685877Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-02-17T20:28:19.0685908Z     self.callable = self.load()
+2026-02-17T20:28:19.0685938Z                     ^^^^^^^^^^^
+2026-02-17T20:28:19.0685968Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-02-17T20:28:19.0685997Z     return self.load_wsgiapp()
+2026-02-17T20:28:19.0686027Z            ^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:28:19.0686076Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-02-17T20:28:19.0686107Z     return util.import_app(self.app_uri)
+2026-02-17T20:28:19.0686139Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:28:19.0686206Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-02-17T20:28:19.0686234Z     mod = importlib.import_module(module)
+2026-02-17T20:28:19.0686262Z           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:28:19.0686305Z   File "/opt/python/3.11.14/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-02-17T20:28:19.0686337Z     return _bootstrap._gcd_import(name[level:], package, level)
+2026-02-17T20:28:19.0686363Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:28:19.0686394Z   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-02-17T20:28:19.0686423Z   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-02-17T20:28:19.0686454Z   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2026-02-17T20:28:19.0686497Z   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2026-02-17T20:28:19.0686532Z   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2026-02-17T20:28:19.0686559Z   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2026-02-17T20:28:19.0686591Z   File "/tmp/8de6e61c9d88215/app/main.py", line 14, in <module>
+2026-02-17T20:28:19.0686617Z     from .config import get_settings
+2026-02-17T20:28:19.0686683Z ImportError: attempted relative import with no known parent package
+2026-02-17T20:28:19.0686714Z attempted relative import with no known parent package
+2026-02-17T20:28:19.0700947Z [2026-02-17 20:28:19 +0000] [1901] [INFO] Worker exiting (pid: 1901)
+2026-02-17T20:28:19.1558620Z [2026-02-17 20:28:19 +0000] [1899] [ERROR] Worker (pid:1901) exited with code 3.
+2026-02-17T20:28:19.1567146Z [2026-02-17 20:28:19 +0000] [1899] [ERROR] Shutting down: Master
+2026-02-17T20:28:19.1567395Z [2026-02-17 20:28:19 +0000] [1899] [ERROR] Reason: Worker failed to boot.
+2026-02-17T20:31:32.7520275Z    _____                               
+2026-02-17T20:31:32.7520487Z   /  _  \ __________ _________   ____  
+2026-02-17T20:31:32.7520511Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:31:32.7520533Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:31:32.7520549Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:31:32.7520568Z         \/      \/                  \/ 
+2026-02-17T20:31:32.7520591Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:31:32.7520629Z 
+2026-02-17T20:31:32.7520648Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:31:32.7520665Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:31:32.7520684Z Python version   : 3.11.14
+2026-02-17T20:31:32.7520705Z Instance Name    : 10-30-0-180
+2026-02-17T20:31:32.7520731Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:31:32.7520748Z 
+2026-02-17T20:31:32.7520767Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:31:32.7520787Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:31:32.7520808Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:31:32.7520824Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:31:36.3022637Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:31:36.3025492Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:31:36.3041459Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:31:36.3042333Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:31:36.3131481Z 4 added, 0 removed; done.
+2026-02-17T20:31:36.3131777Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:31:36.3171184Z done.
+2026-02-17T20:31:36.3230223Z CA certificates copied and updated successfully.
+2026-02-17T20:31:36.3744592Z Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 --chdir app main:app
+2026-02-17T20:31:36.4939661Z Starting periodic command scheduler: cron.
+2026-02-17T20:31:36.4950010Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 --chdir app main:app'
+2026-02-17T20:31:36.5170528Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:31:36.5191548Z Build Operation ID: 04710bd79f8ec78d
+2026-02-17T20:31:36.5206805Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:31:36.5211344Z Output is compressed. Extracting it...
+2026-02-17T20:31:36.5221929Z Found zstd-compressed tarball.
+2026-02-17T20:31:36.5230540Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e61c9d88215'...
+2026-02-17T20:31:36.5230695Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:31:39.4413628Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e61c9d88215'
+2026-02-17T20:31:39.4414547Z App path is set to '/tmp/8de6e61c9d88215'
+2026-02-17T20:31:40.3970822Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:31:41.0774528Z Using packages from virtual environment antenv located at /tmp/8de6e61c9d88215/antenv.
+2026-02-17T20:31:41.0774936Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e61c9d88215/antenv/lib/python3.11/site-packages'
+2026-02-17T20:31:42.4567273Z [2026-02-17 20:31:42 +0000] [1897] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:31:42.4572481Z [2026-02-17 20:31:42 +0000] [1897] [INFO] Listening at: http://0.0.0.0:8000 (1897)
+2026-02-17T20:31:42.4572622Z [2026-02-17 20:31:42 +0000] [1897] [INFO] Using worker: sync
+2026-02-17T20:31:42.4604365Z [2026-02-17 20:31:42 +0000] [1906] [INFO] Booting worker with pid: 1906
+2026-02-17T20:31:42.9663962Z [2026-02-17 20:31:42 +0000] [1906] [ERROR] Exception in worker process
+2026-02-17T20:31:42.9664387Z Traceback (most recent call last):
+2026-02-17T20:31:42.9664416Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-02-17T20:31:42.9664436Z     worker.init_process()
+2026-02-17T20:31:42.9664465Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-02-17T20:31:42.9664483Z     self.load_wsgi()
+2026-02-17T20:31:42.9664506Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-02-17T20:31:42.9664525Z     self.wsgi = self.app.wsgi()
+2026-02-17T20:31:42.9664545Z                 ^^^^^^^^^^^^^^^
+2026-02-17T20:31:42.9664655Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-02-17T20:31:42.9664676Z     self.callable = self.load()
+2026-02-17T20:31:42.9664697Z                     ^^^^^^^^^^^
+2026-02-17T20:31:42.9664719Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-02-17T20:31:42.9664738Z     return self.load_wsgiapp()
+2026-02-17T20:31:42.9664756Z            ^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:31:42.9664779Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-02-17T20:31:42.9664798Z     return util.import_app(self.app_uri)
+2026-02-17T20:31:42.9664817Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:31:42.9664842Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-02-17T20:31:42.9664863Z     mod = importlib.import_module(module)
+2026-02-17T20:31:42.9664899Z           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:31:42.9664923Z   File "/opt/python/3.11.14/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-02-17T20:31:42.9664943Z     return _bootstrap._gcd_import(name[level:], package, level)
+2026-02-17T20:31:42.9664964Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:31:42.9664984Z   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-02-17T20:31:42.9665006Z   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-02-17T20:31:42.9665029Z   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2026-02-17T20:31:42.9665052Z   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2026-02-17T20:31:42.9665072Z   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2026-02-17T20:31:42.9665096Z   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2026-02-17T20:31:42.9665116Z   File "/tmp/8de6e61c9d88215/app/main.py", line 14, in <module>
+2026-02-17T20:31:42.9665151Z     from .config import get_settings
+2026-02-17T20:31:42.9665173Z ImportError: attempted relative import with no known parent package
+2026-02-17T20:31:42.9665219Z attempted relative import with no known parent package
+2026-02-17T20:31:42.9665611Z [2026-02-17 20:31:42 +0000] [1906] [INFO] Worker exiting (pid: 1906)
+2026-02-17T20:31:43.0298586Z [2026-02-17 20:31:43 +0000] [1897] [ERROR] Worker (pid:1906) exited with code 3.
+2026-02-17T20:31:43.0302479Z [2026-02-17 20:31:43 +0000] [1897] [ERROR] Shutting down: Master
+2026-02-17T20:31:43.0302529Z [2026-02-17 20:31:43 +0000] [1897] [ERROR] Reason: Worker failed to boot.
+2026-02-17T20:35:59.8571723Z    _____                               
+2026-02-17T20:35:59.8592622Z   /  _  \ __________ _________   ____  
+2026-02-17T20:35:59.8592771Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:35:59.8592828Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:35:59.8592847Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:35:59.8592875Z         \/      \/                  \/ 
+2026-02-17T20:35:59.8592893Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:35:59.8592910Z 
+2026-02-17T20:35:59.8592932Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:35:59.8592962Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:35:59.8592980Z Python version   : 3.11.14
+2026-02-17T20:35:59.8592997Z Instance Name    : 10-30-0-180
+2026-02-17T20:35:59.8593020Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:35:59.8593036Z 
+2026-02-17T20:35:59.8593053Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:36:02.1526244Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:36:02.1526533Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:36:02.1526566Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:36:19.0061052Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:36:19.0065087Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:36:19.0081896Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:36:19.0083841Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:36:19.8988240Z 4 added, 0 removed; done.
+2026-02-17T20:36:20.0915919Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:36:20.1333512Z done.
+2026-02-17T20:36:20.1366490Z CA certificates copied and updated successfully.
+2026-02-17T20:36:22.0820615Z Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 --chdir app main:app
+2026-02-17T20:36:27.2523413Z Starting periodic command scheduler: cron.
+2026-02-17T20:36:27.2523968Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 --chdir app main:app'
+2026-02-17T20:36:28.3345285Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:36:28.3357521Z Build Operation ID: 4e0a37a99adbea76
+2026-02-17T20:36:28.3363876Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:36:28.3363959Z Output is compressed. Extracting it...
+2026-02-17T20:36:28.3367163Z Found zstd-compressed tarball.
+2026-02-17T20:36:28.3369258Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e63c441c285'...
+2026-02-17T20:36:28.3369352Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:36:33.0795385Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e63c441c285'
+2026-02-17T20:36:33.0795870Z App path is set to '/tmp/8de6e63c441c285'
+2026-02-17T20:36:39.0824572Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:36:41.5337826Z Using packages from virtual environment antenv located at /tmp/8de6e63c441c285/antenv.
+2026-02-17T20:36:41.5338236Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e63c441c285/antenv/lib/python3.11/site-packages'
+2026-02-17T20:36:53.3074732Z [2026-02-17 20:36:53 +0000] [1906] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:36:53.3077996Z [2026-02-17 20:36:53 +0000] [1906] [INFO] Listening at: http://0.0.0.0:8000 (1906)
+2026-02-17T20:36:53.3080538Z [2026-02-17 20:36:53 +0000] [1906] [INFO] Using worker: sync
+2026-02-17T20:36:53.3106176Z [2026-02-17 20:36:53 +0000] [1907] [INFO] Booting worker with pid: 1907
+2026-02-17T20:36:54.2952537Z [2026-02-17 20:36:54 +0000] [1907] [ERROR] Exception in worker process
+2026-02-17T20:36:54.2953014Z Traceback (most recent call last):
+2026-02-17T20:36:54.2953114Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-02-17T20:36:54.2953144Z     worker.init_process()
+2026-02-17T20:36:54.2953178Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-02-17T20:36:54.2953204Z     self.load_wsgi()
+2026-02-17T20:36:54.2953234Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-02-17T20:36:54.2953261Z     self.wsgi = self.app.wsgi()
+2026-02-17T20:36:54.2953306Z                 ^^^^^^^^^^^^^^^
+2026-02-17T20:36:54.2953331Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-02-17T20:36:54.2953356Z     self.callable = self.load()
+2026-02-17T20:36:54.2953380Z                     ^^^^^^^^^^^
+2026-02-17T20:36:54.2953405Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-02-17T20:36:54.2953433Z     return self.load_wsgiapp()
+2026-02-17T20:36:54.2953458Z            ^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:36:54.2953498Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-02-17T20:36:54.2953527Z     return util.import_app(self.app_uri)
+2026-02-17T20:36:54.2953578Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:36:54.2960524Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-02-17T20:36:54.2960571Z     mod = importlib.import_module(module)
+2026-02-17T20:36:54.2960613Z           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:36:54.2960651Z   File "/opt/python/3.11.14/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-02-17T20:36:54.2960683Z     return _bootstrap._gcd_import(name[level:], package, level)
+2026-02-17T20:36:54.2960716Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:36:54.2960744Z   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-02-17T20:36:54.2960772Z   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-02-17T20:36:54.2960822Z   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2026-02-17T20:36:54.2960859Z   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2026-02-17T20:36:54.2960893Z   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2026-02-17T20:36:54.2960930Z   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2026-02-17T20:36:54.2960973Z   File "/tmp/8de6e63c441c285/app/main.py", line 14, in <module>
+2026-02-17T20:36:54.2961007Z     from .config import get_settings
+2026-02-17T20:36:54.2961041Z ImportError: attempted relative import with no known parent package
+2026-02-17T20:36:54.2961081Z attempted relative import with no known parent package
+2026-02-17T20:36:54.2961285Z [2026-02-17 20:36:54 +0000] [1907] [INFO] Worker exiting (pid: 1907)
+2026-02-17T20:36:54.3632047Z [2026-02-17 20:36:54 +0000] [1906] [ERROR] Worker (pid:1907) exited with code 3.
+2026-02-17T20:36:54.3639200Z [2026-02-17 20:36:54 +0000] [1906] [ERROR] Shutting down: Master
+2026-02-17T20:36:54.3643022Z [2026-02-17 20:36:54 +0000] [1906] [ERROR] Reason: Worker failed to boot.
+2026-02-17T20:37:09.1634803Z    _____                               
+2026-02-17T20:37:09.1635414Z   /  _  \ __________ _________   ____  
+2026-02-17T20:37:09.1636083Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:37:09.1636122Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:37:09.1636145Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:37:09.1636167Z         \/      \/                  \/ 
+2026-02-17T20:37:09.1636190Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:37:09.1636213Z 
+2026-02-17T20:37:09.1636237Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:37:09.1636260Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:37:09.1636282Z Python version   : 3.11.14
+2026-02-17T20:37:09.1636306Z Instance Name    : 10-30-0-180
+2026-02-17T20:37:09.1636334Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:37:09.1636354Z 
+2026-02-17T20:37:09.1636395Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:37:17.5080666Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:37:18.0525046Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:37:18.5009711Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:37:44.8448559Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:37:44.8451269Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:37:44.8562885Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:37:44.8661290Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:37:45.3361382Z 4 added, 0 removed; done.
+2026-02-17T20:37:45.3425964Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:37:45.4238332Z done.
+2026-02-17T20:37:45.5239095Z CA certificates copied and updated successfully.
+2026-02-17T20:37:46.2788827Z Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 --chdir app main:app
+2026-02-17T20:37:47.5603918Z Starting periodic command scheduler: cron.
+2026-02-17T20:37:47.6087177Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 --chdir app main:app'
+2026-02-17T20:37:47.8978521Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:37:47.9164653Z Build Operation ID: 4e0a37a99adbea76
+2026-02-17T20:37:47.9171961Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:37:47.9246317Z Output is compressed. Extracting it...
+2026-02-17T20:37:47.9246835Z Found zstd-compressed tarball.
+2026-02-17T20:37:47.9246867Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e63c441c285'...
+2026-02-17T20:37:47.9246889Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:37:57.7647016Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e63c441c285'
+2026-02-17T20:37:57.7647419Z App path is set to '/tmp/8de6e63c441c285'
+2026-02-17T20:37:58.6833970Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:38:00.4690073Z Using packages from virtual environment antenv located at /tmp/8de6e63c441c285/antenv.
+2026-02-17T20:38:00.4690493Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e63c441c285/antenv/lib/python3.11/site-packages'
+2026-02-17T20:38:02.8360786Z [2026-02-17 20:38:02 +0000] [1900] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:38:02.8365290Z [2026-02-17 20:38:02 +0000] [1900] [INFO] Listening at: http://0.0.0.0:8000 (1900)
+2026-02-17T20:38:02.8365422Z [2026-02-17 20:38:02 +0000] [1900] [INFO] Using worker: sync
+2026-02-17T20:38:02.8393039Z [2026-02-17 20:38:02 +0000] [1907] [INFO] Booting worker with pid: 1907
+2026-02-17T20:38:13.5228232Z [2026-02-17 20:38:13 +0000] [1907] [ERROR] Exception in worker process
+2026-02-17T20:38:13.5228660Z Traceback (most recent call last):
+2026-02-17T20:38:13.5228693Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-02-17T20:38:13.5228793Z     worker.init_process()
+2026-02-17T20:38:13.5228819Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-02-17T20:38:13.5228840Z     self.load_wsgi()
+2026-02-17T20:38:13.5228864Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-02-17T20:38:13.5228883Z     self.wsgi = self.app.wsgi()
+2026-02-17T20:38:13.5228901Z                 ^^^^^^^^^^^^^^^
+2026-02-17T20:38:13.5228926Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-02-17T20:38:13.5228944Z     self.callable = self.load()
+2026-02-17T20:38:13.5228962Z                     ^^^^^^^^^^^
+2026-02-17T20:38:13.5228982Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-02-17T20:38:13.5229001Z     return self.load_wsgiapp()
+2026-02-17T20:38:13.5229035Z            ^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:38:13.5229056Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-02-17T20:38:13.5229077Z     return util.import_app(self.app_uri)
+2026-02-17T20:38:13.5229095Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:38:13.5229116Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-02-17T20:38:13.5229136Z     mod = importlib.import_module(module)
+2026-02-17T20:38:13.5229155Z           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:38:13.5229177Z   File "/opt/python/3.11.14/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-02-17T20:38:13.5229198Z     return _bootstrap._gcd_import(name[level:], package, level)
+2026-02-17T20:38:13.5229220Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:38:13.5229255Z   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-02-17T20:38:13.5229278Z   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-02-17T20:38:13.5229299Z   File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+2026-02-17T20:38:13.5229322Z   File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+2026-02-17T20:38:13.5229343Z   File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+2026-02-17T20:38:13.5229365Z   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2026-02-17T20:38:13.5229385Z   File "/tmp/8de6e63c441c285/app/main.py", line 14, in <module>
+2026-02-17T20:38:13.5229407Z     from .config import get_settings
+2026-02-17T20:38:13.5229426Z ImportError: attempted relative import with no known parent package
+2026-02-17T20:38:13.5229491Z attempted relative import with no known parent package
+2026-02-17T20:38:13.5231377Z [2026-02-17 20:38:13 +0000] [1907] [INFO] Worker exiting (pid: 1907)
+2026-02-17T20:38:13.6038728Z [2026-02-17 20:38:13 +0000] [1900] [ERROR] Worker (pid:1907) exited with code 3.
+2026-02-17T20:38:13.6046765Z [2026-02-17 20:38:13 +0000] [1900] [ERROR] Shutting down: Master
+2026-02-17T20:38:13.6046932Z [2026-02-17 20:38:13 +0000] [1900] [ERROR] Reason: Worker failed to boot.
+2026-02-17T20:41:29.0169569Z    _____                               
+2026-02-17T20:41:29.0170834Z   /  _  \ __________ _________   ____  
+2026-02-17T20:41:29.0171136Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:41:29.0171172Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:41:29.0171204Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:41:29.0171245Z         \/      \/                  \/ 
+2026-02-17T20:41:29.0171276Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:41:29.0171306Z 
+2026-02-17T20:41:29.0171342Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:41:29.0171385Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:41:29.0171414Z Python version   : 3.11.14
+2026-02-17T20:41:29.0171442Z Instance Name    : 10-30-0-180
+2026-02-17T20:41:29.0172350Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:41:29.0172406Z 
+2026-02-17T20:41:29.0172432Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:41:29.2714806Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:41:29.2860954Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:41:29.3042280Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:41:33.9302317Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:41:33.9308585Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:41:33.9334932Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:41:33.9337927Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:41:33.9498338Z 4 added, 0 removed; done.
+2026-02-17T20:41:33.9498661Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:41:33.9524475Z done.
+2026-02-17T20:41:33.9565506Z CA certificates copied and updated successfully.
+2026-02-17T20:41:33.9863166Z Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 --workers 1 app.main:app
+2026-02-17T20:41:34.1027418Z Starting periodic command scheduler: cron.
+2026-02-17T20:41:34.1032373Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 --workers 1 app.main:app'
+2026-02-17T20:41:34.1581625Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:41:34.1601031Z Build Operation ID: 4e0a37a99adbea76
+2026-02-17T20:41:34.1612261Z Output is compressed. Extracting it...
+2026-02-17T20:41:34.1613029Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:41:34.1620438Z Found zstd-compressed tarball.
+2026-02-17T20:41:34.1627015Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e63c441c285'...
+2026-02-17T20:41:34.1628087Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:41:35.3190455Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e63c441c285'
+2026-02-17T20:41:35.3190959Z App path is set to '/tmp/8de6e63c441c285'
+2026-02-17T20:41:36.0515917Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:41:36.2976605Z Using packages from virtual environment antenv located at /tmp/8de6e63c441c285/antenv.
+2026-02-17T20:41:36.2987154Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e63c441c285/antenv/lib/python3.11/site-packages'
+2026-02-17T20:41:36.6113368Z [2026-02-17 20:41:36 +0000] [1900] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:41:36.6118742Z [2026-02-17 20:41:36 +0000] [1900] [INFO] Listening at: http://0.0.0.0:8000 (1900)
+2026-02-17T20:41:36.6118942Z [2026-02-17 20:41:36 +0000] [1900] [INFO] Using worker: sync
+2026-02-17T20:41:36.6153270Z [2026-02-17 20:41:36 +0000] [1907] [INFO] Booting worker with pid: 1907
+2026-02-17T20:41:37.0527185Z [2026-02-17 20:41:37 +0000] [1907] [ERROR] Error handling request /robots933456.txt
+2026-02-17T20:41:37.0527674Z Traceback (most recent call last):
+2026-02-17T20:41:37.0527716Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-02-17T20:41:37.0527745Z     self.handle_request(listener, req, client, addr)
+2026-02-17T20:41:37.0527775Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-02-17T20:41:37.0527869Z     respiter = self.wsgi(environ, resp.start_response)
+2026-02-17T20:41:37.0527897Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:41:37.0527925Z TypeError: FastAPI.__call__() missing 1 required positional argument: 'send'
+2026-02-17T20:41:37.2771706Z [2026-02-17 20:41:37 +0000] [1907] [ERROR] Error handling request /health
+2026-02-17T20:41:37.2772046Z Traceback (most recent call last):
+2026-02-17T20:41:37.2772077Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-02-17T20:41:37.2772099Z     self.handle_request(listener, req, client, addr)
+2026-02-17T20:41:37.2772125Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-02-17T20:41:37.2772183Z     respiter = self.wsgi(environ, resp.start_response)
+2026-02-17T20:41:37.2772204Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:41:37.2772227Z TypeError: FastAPI.__call__() missing 1 required positional argument: 'send'
+2026-02-17T20:42:31.2753440Z    _____                               
+2026-02-17T20:42:31.2755813Z   /  _  \ __________ _________   ____  
+2026-02-17T20:42:31.2755947Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:42:31.2755974Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:42:31.2755999Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:42:31.2756034Z         \/      \/                  \/ 
+2026-02-17T20:42:31.2756060Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:42:31.2756085Z 
+2026-02-17T20:42:31.2756114Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:42:31.2756164Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:42:31.2756191Z Python version   : 3.11.14
+2026-02-17T20:42:31.2756220Z Instance Name    : 10-30-0-180
+2026-02-17T20:42:31.2756250Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:42:31.2756276Z 
+2026-02-17T20:42:31.2756303Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:42:32.2720186Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:42:32.3207563Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:42:32.4605735Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:42:59.3813456Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:42:59.3813965Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:42:59.3880782Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:42:59.3883893Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:42:59.3955723Z 4 added, 0 removed; done.
+2026-02-17T20:42:59.3966241Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:42:59.4718157Z done.
+2026-02-17T20:42:59.4786430Z CA certificates copied and updated successfully.
+2026-02-17T20:42:59.6126203Z Site's appCommandLine: gunicorn --bind 0.0.0.0 --timeout 600 --workers 1 wsgi:app
+2026-02-17T20:42:59.7448943Z Starting periodic command scheduler: cron.
+2026-02-17T20:42:59.7516267Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind 0.0.0.0 --timeout 600 --workers 1 wsgi:app'
+2026-02-17T20:42:59.7888688Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:42:59.7936767Z Build Operation ID: 4e0a37a99adbea76
+2026-02-17T20:42:59.7953795Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:42:59.7968843Z Output is compressed. Extracting it...
+2026-02-17T20:42:59.7978562Z Found zstd-compressed tarball.
+2026-02-17T20:42:59.7980375Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e63c441c285'...
+2026-02-17T20:42:59.7980673Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:43:03.5474116Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e63c441c285'
+2026-02-17T20:43:03.5488917Z App path is set to '/tmp/8de6e63c441c285'
+2026-02-17T20:43:07.0033633Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:43:08.2335430Z Using packages from virtual environment antenv located at /tmp/8de6e63c441c285/antenv.
+2026-02-17T20:43:08.2339511Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e63c441c285/antenv/lib/python3.11/site-packages'
+2026-02-17T20:43:10.0375416Z [2026-02-17 20:43:10 +0000] [1898] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:43:10.0383824Z [2026-02-17 20:43:10 +0000] [1898] [INFO] Listening at: http://0.0.0.0:8000 (1898)
+2026-02-17T20:43:10.0386968Z [2026-02-17 20:43:10 +0000] [1898] [INFO] Using worker: sync
+2026-02-17T20:43:10.1709190Z [2026-02-17 20:43:10 +0000] [1901] [INFO] Booting worker with pid: 1901
+2026-02-17T20:43:10.2243435Z [2026-02-17 20:43:10 +0000] [1901] [ERROR] Exception in worker process
+2026-02-17T20:43:10.2243936Z Traceback (most recent call last):
+2026-02-17T20:43:10.2243985Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-02-17T20:43:10.2244019Z     worker.init_process()
+2026-02-17T20:43:10.2244112Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-02-17T20:43:10.2244144Z     self.load_wsgi()
+2026-02-17T20:43:10.2244179Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-02-17T20:43:10.2244209Z     self.wsgi = self.app.wsgi()
+2026-02-17T20:43:10.2244238Z                 ^^^^^^^^^^^^^^^
+2026-02-17T20:43:10.2244268Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-02-17T20:43:10.2244321Z     self.callable = self.load()
+2026-02-17T20:43:10.2244352Z                     ^^^^^^^^^^^
+2026-02-17T20:43:10.2244385Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-02-17T20:43:10.2244416Z     return self.load_wsgiapp()
+2026-02-17T20:43:10.2244445Z            ^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:43:10.2244475Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-02-17T20:43:10.2244503Z     return util.import_app(self.app_uri)
+2026-02-17T20:43:10.2244569Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:43:10.2244602Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/util.py", line 366, in import_app
+2026-02-17T20:43:10.2244632Z     mod = importlib.import_module(module)
+2026-02-17T20:43:10.2244660Z           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:43:10.2244691Z   File "/opt/python/3.11.14/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2026-02-17T20:43:10.2244732Z     return _bootstrap._gcd_import(name[level:], package, level)
+2026-02-17T20:43:10.2244768Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:43:10.2244800Z   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2026-02-17T20:43:10.2244833Z   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2026-02-17T20:43:10.2244865Z   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2026-02-17T20:43:10.2244895Z ModuleNotFoundError: No module named 'wsgi'
+2026-02-17T20:43:10.2313864Z No module named 'wsgi'
+2026-02-17T20:43:10.2315044Z [2026-02-17 20:43:10 +0000] [1901] [INFO] Worker exiting (pid: 1901)
+2026-02-17T20:43:10.3684554Z [2026-02-17 20:43:10 +0000] [1898] [ERROR] Worker (pid:1901) exited with code 3.
+2026-02-17T20:43:10.3688671Z [2026-02-17 20:43:10 +0000] [1898] [ERROR] Shutting down: Master
+2026-02-17T20:43:10.3688781Z [2026-02-17 20:43:10 +0000] [1898] [ERROR] Reason: Worker failed to boot.
+2026-02-17T20:45:29.6948392Z    _____                               
+2026-02-17T20:45:29.6949668Z   /  _  \ __________ _________   ____  
+2026-02-17T20:45:29.6949731Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:45:29.6949789Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:45:29.6949817Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:45:29.6949853Z         \/      \/                  \/ 
+2026-02-17T20:45:29.6949879Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:45:29.6949905Z 
+2026-02-17T20:45:29.6949944Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:45:29.6949990Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:45:29.6950020Z Python version   : 3.11.14
+2026-02-17T20:45:29.6950050Z Instance Name    : 10-30-0-180
+2026-02-17T20:45:29.6950085Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:45:29.6950109Z 
+2026-02-17T20:45:29.6950135Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:45:30.1346212Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:45:30.1430431Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:45:30.1922116Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:45:35.9254075Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:45:35.9257015Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:45:35.9308802Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:45:35.9311250Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:45:35.9613581Z 4 added, 0 removed; done.
+2026-02-17T20:45:35.9619965Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:45:35.9677768Z done.
+2026-02-17T20:45:35.9788864Z CA certificates copied and updated successfully.
+2026-02-17T20:45:36.2240992Z Site's appCommandLine: gunicorn --bind 0.0.0.0 --timeout 600 --workers 1 wsgi:app
+2026-02-17T20:45:36.6543787Z Starting periodic command scheduler: cron.
+2026-02-17T20:45:36.6556267Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind 0.0.0.0 --timeout 600 --workers 1 wsgi:app'
+2026-02-17T20:45:37.2589783Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:45:37.2610145Z Build Operation ID: fed139e514925d4f
+2026-02-17T20:45:37.2623609Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:45:37.2624056Z Output is compressed. Extracting it...
+2026-02-17T20:45:37.2637439Z Found zstd-compressed tarball.
+2026-02-17T20:45:37.2637692Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e65302e0459'...
+2026-02-17T20:45:37.2637736Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:45:38.6459873Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e65302e0459'
+2026-02-17T20:45:38.6461159Z App path is set to '/tmp/8de6e65302e0459'
+2026-02-17T20:45:40.1549843Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:45:40.4197120Z Using packages from virtual environment antenv located at /tmp/8de6e65302e0459/antenv.
+2026-02-17T20:45:40.4202006Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e65302e0459/antenv/lib/python3.11/site-packages'
+2026-02-17T20:45:40.8619257Z [2026-02-17 20:45:40 +0000] [1899] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:45:40.8623986Z [2026-02-17 20:45:40 +0000] [1899] [INFO] Listening at: http://0.0.0.0:8000 (1899)
+2026-02-17T20:45:40.8624208Z [2026-02-17 20:45:40 +0000] [1899] [INFO] Using worker: sync
+2026-02-17T20:45:40.8650790Z [2026-02-17 20:45:40 +0000] [1906] [INFO] Booting worker with pid: 1906
+2026-02-17T20:45:42.5776966Z [2026-02-17 20:45:42 +0000] [1906] [ERROR] Error handling request /robots933456.txt
+2026-02-17T20:45:42.5777452Z Traceback (most recent call last):
+2026-02-17T20:45:42.5777560Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-02-17T20:45:42.5777590Z     self.handle_request(listener, req, client, addr)
+2026-02-17T20:45:42.5777620Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-02-17T20:45:42.5777650Z     respiter = self.wsgi(environ, resp.start_response)
+2026-02-17T20:45:42.5777676Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:45:42.5777702Z TypeError: FastAPI.__call__() missing 1 required positional argument: 'send'
+2026-02-17T20:45:42.8785426Z [2026-02-17 20:45:42 +0000] [1906] [ERROR] Error handling request /health
+2026-02-17T20:45:42.8785809Z Traceback (most recent call last):
+2026-02-17T20:45:42.8785840Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/sync.py", line 134, in handle
+2026-02-17T20:45:42.8785862Z     self.handle_request(listener, req, client, addr)
+2026-02-17T20:45:42.8785890Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+2026-02-17T20:45:42.8785917Z     respiter = self.wsgi(environ, resp.start_response)
+2026-02-17T20:45:42.8785934Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-17T20:45:42.8785953Z TypeError: FastAPI.__call__() missing 1 required positional argument: 'send'
+2026-02-17T20:48:00.4301678Z    _____                               
+2026-02-17T20:48:00.4304787Z   /  _  \ __________ _________   ____  
+2026-02-17T20:48:00.4304917Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:48:00.4304950Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:48:00.4304977Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:48:00.4305016Z         \/      \/                  \/ 
+2026-02-17T20:48:00.4305077Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:48:00.4305105Z 
+2026-02-17T20:48:00.4305136Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:48:00.4305168Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:48:00.4305201Z Python version   : 3.11.14
+2026-02-17T20:48:00.4305228Z Instance Name    : 10-30-0-180
+2026-02-17T20:48:00.4305268Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:48:00.4305293Z 
+2026-02-17T20:48:00.4305319Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:48:01.1967755Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:48:01.2101295Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:48:01.2324477Z Updating certificates in /etc/ssl/certs...
+2026-02-17T20:48:04.4780106Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2026-02-17T20:48:04.4783266Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2026-02-17T20:48:04.4803266Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2026-02-17T20:48:04.4813108Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2026-02-17T20:48:04.5697102Z 4 added, 0 removed; done.
+2026-02-17T20:48:04.5698577Z Running hooks in /etc/ca-certificates/update.d...
+2026-02-17T20:48:04.5751934Z done.
+2026-02-17T20:48:04.5825493Z CA certificates copied and updated successfully.
+2026-02-17T20:48:04.6544516Z Site's appCommandLine: gunicorn --bind 0.0.0.0 --timeout 600 --worker-class uvicorn.workers.UvicornWorker --workers 1 app.main:app
+2026-02-17T20:48:04.9911862Z Starting periodic command scheduler: cron.
+2026-02-17T20:48:04.9920233Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind 0.0.0.0 --timeout 600 --worker-class uvicorn.workers.UvicornWorker --workers 1 app.main:app'
+2026-02-17T20:48:05.0114173Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-02-17T20:48:05.0126238Z Build Operation ID: fed139e514925d4f
+2026-02-17T20:48:05.0138822Z Oryx Version: 0.2.20260130.1, Commit: a98e9aef5dfb6572a08b0a07ce414e1122ab4a2e, ReleaseTagName: 20260130.1
+2026-02-17T20:48:05.0143002Z Output is compressed. Extracting it...
+2026-02-17T20:48:05.0155856Z Found zstd-compressed tarball.
+2026-02-17T20:48:05.0160117Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8de6e65302e0459'...
+2026-02-17T20:48:05.0164698Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-02-17T20:48:06.3763231Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8de6e65302e0459'
+2026-02-17T20:48:06.3763635Z App path is set to '/tmp/8de6e65302e0459'
+2026-02-17T20:48:07.3241404Z Writing output script to '/opt/startup/startup.sh'
+2026-02-17T20:48:07.9994024Z Using packages from virtual environment antenv located at /tmp/8de6e65302e0459/antenv.
+2026-02-17T20:48:08.0002323Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8de6e65302e0459/antenv/lib/python3.11/site-packages'
+2026-02-17T20:48:08.7818089Z [2026-02-17 20:48:08 +0000] [1897] [INFO] Starting gunicorn 24.1.1
+2026-02-17T20:48:08.7828801Z [2026-02-17 20:48:08 +0000] [1897] [INFO] Listening at: http://0.0.0.0:8000 (1897)
+2026-02-17T20:48:08.7829006Z [2026-02-17 20:48:08 +0000] [1897] [INFO] Using worker: uvicorn.workers.UvicornWorker
+2026-02-17T20:48:08.7869579Z [2026-02-17 20:48:08 +0000] [1900] [INFO] Booting worker with pid: 1900
+2026-02-17T20:48:09.5412897Z [2026-02-17 20:48:09 +0000] [1900] [INFO] Started server process [1900]
+2026-02-17T20:48:09.5413333Z [2026-02-17 20:48:09 +0000] [1900] [INFO] Waiting for application startup.
+2026-02-17T20:48:09.5413548Z [2026-02-17 20:48:09 +0000] [1900] [INFO] Application startup complete.
+2026-02-17T20:53:51.6848097Z    _____                               
+2026-02-17T20:53:51.6854155Z   /  _  \ __________ _________   ____  
+2026-02-17T20:53:51.6854311Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2026-02-17T20:53:51.6854341Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2026-02-17T20:53:51.6854372Z \____|__  /_____ \____/ |__|    \___  >
+2026-02-17T20:53:51.6854414Z         \/      \/                  \/ 
+2026-02-17T20:53:51.6854475Z A P P   S E R V I C E   O N   L I N U X
+2026-02-17T20:53:51.6854501Z 
+2026-02-17T20:53:51.6854535Z Documentation    : http://aka.ms/webapp-linux
+2026-02-17T20:53:51.6854567Z Python quickstart: https://aka.ms/python-qs
+2026-02-17T20:53:51.6854598Z Python version   : 3.11.14
+2026-02-17T20:53:51.6854628Z Instance Name    : 10-30-0-180
+2026-02-17T20:53:51.6854661Z Instance Id      : 90145b2bd9c2134d7848fcf57324c242f27d6e34ed560237d8dfff9c3dfec11f
+2026-02-17T20:53:51.6854699Z 
+2026-02-17T20:53:51.6854729Z Note: Any data outside '/home' is not persisted
+2026-02-17T20:54:08.6166550Z Starting OpenBSD Secure Shell server: sshd.
+2026-02-17T20:54:10.1996196Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-02-17T20:54:13.1241813Z Updating certificates in /etc/ssl/certs...

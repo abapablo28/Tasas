@@ -1,0 +1,17 @@
+<step title="Incoming Request" date="2026-02-17T20:18:55.807" instance="90145b" url="/api/zipdeploy?isAsync=true" method="POST" type="request" pid="767,1,7" Accept="*/*" Host="trmpythonback-mx.scm.azurewebsites.net" User-Agent="AZURECLI/2.79.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Content-Length="24260" x-ms-client-request-id="bd4bfe7f-0c3d-11f1-9752-00090faa0001" x-ms-artifact-checksum="640c30fa435523ea17edc99ba0eb04394d9401f1331c497c648a57fb68bb45b0" X-ARR-LOG-ID="bd4bfe7f-0c3d-11f1-9752-00090faa0001" CLIENT-IP="181.49.36.50:53398" X-SITE-DEPLOYMENT-ID="trmpythonback-mx" WAS-DEFAULT-HOSTNAME="trmpythonback-mx.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/zipdeploy?isAsync=true" X-Client-IP="181.49.36.50" X-Client-Port="53398" >
+  <step title="ZipPushDeploy" date="2026-02-17T20:18:56.023" >
+    <step title="ZipDeploy. Extract zip. Remote build." date="2026-02-17T20:18:56.027" /><!-- duration: 2ms -->
+    <step title="None repository commit" date="2026-02-17T20:18:56.036" >
+      <step title="Commit id: 36ac937b-cde5-42b8-a64c-b59be939b975" date="2026-02-17T20:18:56.038" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 1ms -->
+    </step><!-- duration: 7ms -->
+    <step title="Starting PushDeployAsync" date="2026-02-17T20:18:56.045" /><!-- duration: 2ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/ce954e54-729f-4ede-80e4-f9a855365f25.zip" date="2026-02-17T20:18:56.054" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/ce954e54-729f-4ede-80e4-f9a855365f25.zip" date="2026-02-17T20:18:56.059" /><!-- duration: 2ms -->
+    </step><!-- duration: 19ms -->
+    <step title="Start deployment in the background" date="2026-02-17T20:18:56.081" >
+      <step title="Acquiring Deployment Lock" date="2026-02-17T20:18:56.102" /><!-- duration: 4ms -->
+      <step title="Acquired Deployment Lock" date="2026-02-17T20:18:56.201" /><!-- duration: 2ms -->
+    </step><!-- duration: 192ms -->
+  </step><!-- duration: 256ms -->
+  <step title="Outgoing response" date="2026-02-17T20:18:56.287" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 3ms -->
+</step><!-- duration: 486ms -->

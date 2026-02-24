@@ -1,7 +1,5 @@
 """
-WSGI entry point for Gunicorn
+ASGI entry point para Gunicorn con Uvicorn
+FastAPI es ASGI, no WSGI
 """
 from app.main import app
-
-if __name__ == "__main__":
-    app.run()

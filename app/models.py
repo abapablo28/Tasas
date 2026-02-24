@@ -7,17 +7,21 @@ from decimal import Decimal
 
 
 class MonedaValor(BaseModel):
-    """Modelo que representa una fila de la tabla dbo.MonedaValor."""
-    id: int
-    tipo_moneda: str
-    valor: Decimal
+    """Modelo que representa una fila de la tabla dbo.MonedaValor (nueva estructura)."""
+    ssinstrumnt: str
+    mifeedname: str
+    ratetype: str
+    timestamp_valor: str
+    currency: str
 
     class Config:
         json_schema_extra = {
             "example": {
-                "id": 1,
-                "tipo_moneda": "USD",
-                "valor": 4150.25
+                "ssinstrumnt": "USDCOPTRM",
+                "mifeedname": "MIF",
+                "ratetype": "MID",
+                "timestamp_valor": "20260223140000+4235.500000",
+                "currency": "COP"
             }
         }
 
@@ -37,3 +41,15 @@ class HealthResponse(BaseModel):
 class ErrorResponse(BaseModel):
     """Respuesta de error."""
     detail: str
+
+
+class TasaCambioSAP(BaseModel):
+    """Formato fixed-width para TBD4/RINID de SAP (238 caracteres exactos)."""
+    linea: str
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "linea": "USDCOPTRM           MIF            MID                20260223140000+        4235.50000COP                                          "
+            }
+        }

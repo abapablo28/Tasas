@@ -1,0 +1,486 @@
+2026-02-17T20:19:54.5258415Z Container start method called.
+2026-02-17T20:19:54.5343019Z Establishing network.
+2026-02-17T20:19:54.5411279Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:20:35.7205888Z Image appsvc/python:3.11_20260203.2.tuxprod is pulled from registry 10.1.0.4:13209
+2026-02-17T20:20:35.7355766Z Container is starting.
+2026-02-17T20:20:35.7415678Z Establishing user namespace if not established already.
+2026-02-17T20:20:35.7417937Z Establishing network if not established already.
+2026-02-17T20:20:35.7419180Z Mounting volumes.
+2026-02-17T20:20:35.7497186Z Nested mountpoint 
+2026-02-17T20:20:35.7644923Z Nested mountpoint volatile/logs
+2026-02-17T20:20:35.7703746Z Nested mountpoint 
+2026-02-17T20:20:35.7922973Z Nested mountpoint 
+2026-02-17T20:20:35.7931812Z Nested mountpoint 
+2026-02-17T20:20:35.9556609Z Creating container.
+2026-02-17T20:20:35.9559339Z Creating pipes for streaming container io.
+2026-02-17T20:20:35.9560529Z Creating stdout named pipe at /podr/container/pipe/6513e93bc843_trmpythonback-mx/stdout_eeca85f825e44f508556b2aef3819728.
+2026-02-17T20:20:35.9570943Z Successfully created stdout named pipe at: /podr/container/pipe/6513e93bc843_trmpythonback-mx/stdout_eeca85f825e44f508556b2aef3819728.
+2026-02-17T20:20:35.9572903Z Opening named pipe /podr/container/pipe/6513e93bc843_trmpythonback-mx/stdout_eeca85f825e44f508556b2aef3819728 for reading in non-blocking mode.
+2026-02-17T20:20:35.9574170Z Successfully opened named pipe: /podr/container/pipe/6513e93bc843_trmpythonback-mx/stdout_eeca85f825e44f508556b2aef3819728.
+2026-02-17T20:20:35.9575206Z Successfully removed non-blocking flag from /podr/container/pipe/6513e93bc843_trmpythonback-mx/stdout_eeca85f825e44f508556b2aef3819728.
+2026-02-17T20:20:35.9585639Z Creating stderr named pipe at /podr/container/pipe/6513e93bc843_trmpythonback-mx/stderr_bc22cd4e0399448d87c76da0c4ad9b2c.
+2026-02-17T20:20:35.9591868Z Successfully created stderr named pipe at: /podr/container/pipe/6513e93bc843_trmpythonback-mx/stderr_bc22cd4e0399448d87c76da0c4ad9b2c.
+2026-02-17T20:20:35.9597180Z Opening named pipe /podr/container/pipe/6513e93bc843_trmpythonback-mx/stderr_bc22cd4e0399448d87c76da0c4ad9b2c for reading in non-blocking mode.
+2026-02-17T20:20:35.9598537Z Successfully opened named pipe: /podr/container/pipe/6513e93bc843_trmpythonback-mx/stderr_bc22cd4e0399448d87c76da0c4ad9b2c.
+2026-02-17T20:20:35.9602994Z Successfully removed non-blocking flag from /podr/container/pipe/6513e93bc843_trmpythonback-mx/stderr_bc22cd4e0399448d87c76da0c4ad9b2c.
+2026-02-17T20:20:35.9614716Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:20:36.4405919Z Starting container: 6513e93bc843_trmpythonback-mx.
+2026-02-17T20:20:36.4676879Z Starting watchers and probes.
+2026-02-17T20:20:36.4738725Z Starting metrics collection.
+2026-02-17T20:20:36.4751866Z Container is running.
+2026-02-17T20:20:36.5287081Z Container start method finished after 42001 ms.
+2026-02-17T20:20:56.5921662Z Site startup probe succeeded after 19.9711201 seconds.
+2026-02-17T20:20:56.8101319Z Site is running with deployment version: 36ac937b-cde5-42b8-a64c-b59be939b975
+2026-02-17T20:20:56.8209321Z Site started.
+2026-02-17T20:20:57.0759372Z Site is running with patch version PYTHON 3.11.14
+2026-02-17T20:22:52.4308064Z Container start method called.
+2026-02-17T20:22:52.4786901Z Establishing network.
+2026-02-17T20:22:52.4802056Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:22:55.1251330Z Image appsvc/python:3.11_20260203.2.tuxprod is pulled from registry 10.1.0.5:13209
+2026-02-17T20:22:55.1304261Z Container is starting.
+2026-02-17T20:22:55.1322136Z Establishing user namespace if not established already.
+2026-02-17T20:22:55.1330920Z Establishing network if not established already.
+2026-02-17T20:22:55.1402131Z Mounting volumes.
+2026-02-17T20:22:55.1621376Z Nested mountpoint 
+2026-02-17T20:22:55.1888726Z Nested mountpoint volatile/logs
+2026-02-17T20:22:55.2195209Z Nested mountpoint 
+2026-02-17T20:22:55.2762543Z Nested mountpoint 
+2026-02-17T20:22:55.3197936Z Nested mountpoint 
+2026-02-17T20:22:56.3167802Z Creating container.
+2026-02-17T20:22:56.3169228Z Creating pipes for streaming container io.
+2026-02-17T20:22:56.3170137Z Creating stdout named pipe at /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stdout_e653303b3108484bbe6371aa9388b2f7.
+2026-02-17T20:22:56.3172158Z Successfully created stdout named pipe at: /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stdout_e653303b3108484bbe6371aa9388b2f7.
+2026-02-17T20:22:56.3221650Z Opening named pipe /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stdout_e653303b3108484bbe6371aa9388b2f7 for reading in non-blocking mode.
+2026-02-17T20:22:56.3227276Z Successfully opened named pipe: /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stdout_e653303b3108484bbe6371aa9388b2f7.
+2026-02-17T20:22:56.3233734Z Successfully removed non-blocking flag from /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stdout_e653303b3108484bbe6371aa9388b2f7.
+2026-02-17T20:22:56.3236644Z Creating stderr named pipe at /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stderr_556c77f0d196474591142c4f72946dde.
+2026-02-17T20:22:56.3239758Z Successfully created stderr named pipe at: /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stderr_556c77f0d196474591142c4f72946dde.
+2026-02-17T20:22:56.3240758Z Opening named pipe /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stderr_556c77f0d196474591142c4f72946dde for reading in non-blocking mode.
+2026-02-17T20:22:56.3241839Z Successfully opened named pipe: /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stderr_556c77f0d196474591142c4f72946dde.
+2026-02-17T20:22:56.3243016Z Successfully removed non-blocking flag from /podr/container/pipe/c1ef95e19af0_trmpythonback-mx/stderr_556c77f0d196474591142c4f72946dde.
+2026-02-17T20:22:56.3247438Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:22:58.2424914Z Starting container: c1ef95e19af0_trmpythonback-mx.
+2026-02-17T20:22:59.0988838Z Starting watchers and probes.
+2026-02-17T20:22:59.0994416Z Starting metrics collection.
+2026-02-17T20:22:59.0996049Z Container is running.
+2026-02-17T20:22:59.2890450Z Container start method finished after 6818 ms.
+2026-02-17T20:23:30.2975633Z Site startup probe succeeded after 31.0054318 seconds.
+2026-02-17T20:23:30.5309606Z Site is running with deployment version: 36ac937b-cde5-42b8-a64c-b59be939b975
+2026-02-17T20:23:30.5342806Z Site started.
+2026-02-17T20:23:30.5347682Z Site is running with patch version PYTHON 3.11.14
+2026-02-17T20:23:52.1833086Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:23:52.3999596Z Stop and delete container. Retry count = 0
+2026-02-17T20:23:52.4005781Z Stopping container: 6513e93bc843_trmpythonback-mx.
+2026-02-17T20:23:58.0199573Z Deleting container: 6513e93bc843_trmpythonback-mx. Retry count = 0
+2026-02-17T20:24:08.3165209Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:24:08.3170587Z Container is terminated. Total time elapsed: 16133 ms.
+2026-02-17T20:24:08.3335471Z Site: trmpythonback-mx stopped.
+2026-02-17T20:27:24.7045169Z Container start method called.
+2026-02-17T20:27:24.7117743Z Establishing network.
+2026-02-17T20:27:24.7119809Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:27:28.1888471Z Container is starting.
+2026-02-17T20:27:28.1891596Z Establishing user namespace if not established already.
+2026-02-17T20:27:28.1892642Z Establishing network if not established already.
+2026-02-17T20:27:28.1893976Z Mounting volumes.
+2026-02-17T20:27:28.1916039Z Nested mountpoint 
+2026-02-17T20:27:28.1977662Z Nested mountpoint volatile/logs
+2026-02-17T20:27:28.2025538Z Nested mountpoint 
+2026-02-17T20:27:28.2033095Z Nested mountpoint 
+2026-02-17T20:27:28.2069351Z Nested mountpoint 
+2026-02-17T20:27:28.4554017Z Creating container.
+2026-02-17T20:27:28.4635527Z Creating pipes for streaming container io.
+2026-02-17T20:27:28.4637020Z Creating stdout named pipe at /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stdout_8c3adb82d12541f9baf2079fcfcbaab5.
+2026-02-17T20:27:28.4640385Z Successfully created stdout named pipe at: /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stdout_8c3adb82d12541f9baf2079fcfcbaab5.
+2026-02-17T20:27:28.4641571Z Opening named pipe /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stdout_8c3adb82d12541f9baf2079fcfcbaab5 for reading in non-blocking mode.
+2026-02-17T20:27:28.4642811Z Successfully opened named pipe: /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stdout_8c3adb82d12541f9baf2079fcfcbaab5.
+2026-02-17T20:27:28.4643676Z Successfully removed non-blocking flag from /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stdout_8c3adb82d12541f9baf2079fcfcbaab5.
+2026-02-17T20:27:28.4644545Z Creating stderr named pipe at /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stderr_47576f749ec14bf6bb2c0d1834718057.
+2026-02-17T20:27:28.4645823Z Successfully created stderr named pipe at: /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stderr_47576f749ec14bf6bb2c0d1834718057.
+2026-02-17T20:27:28.4699349Z Opening named pipe /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stderr_47576f749ec14bf6bb2c0d1834718057 for reading in non-blocking mode.
+2026-02-17T20:27:28.4701481Z Successfully opened named pipe: /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stderr_47576f749ec14bf6bb2c0d1834718057.
+2026-02-17T20:27:28.4703127Z Successfully removed non-blocking flag from /podr/container/pipe/d3620ada82fe_trmpythonback-mx/stderr_47576f749ec14bf6bb2c0d1834718057.
+2026-02-17T20:27:28.4704425Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:27:30.4908905Z Starting container: d3620ada82fe_trmpythonback-mx.
+2026-02-17T20:27:30.9626635Z Starting watchers and probes.
+2026-02-17T20:27:30.9766651Z Starting metrics collection.
+2026-02-17T20:27:31.0151902Z Container is running.
+2026-02-17T20:27:32.0067162Z Container start method finished after 7298 ms.
+2026-02-17T20:28:19.2442620Z Container has finished running with exit code: 3.
+2026-02-17T20:28:19.2464259Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:28:19.2519876Z Stop and delete container. Retry count = 0
+2026-02-17T20:28:19.2521384Z Stopping container: d3620ada82fe_trmpythonback-mx.
+2026-02-17T20:28:19.3179914Z Deleting container: d3620ada82fe_trmpythonback-mx. Retry count = 0
+2026-02-17T20:28:19.7262348Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:28:19.7266196Z Container is terminated. Total time elapsed: 479 ms.
+2026-02-17T20:28:19.7269434Z Site container: trmpythonback-mx terminated during site startup.
+2026-02-17T20:28:20.1684796Z Site startup probe failed after 48.109805 seconds.
+2026-02-17T20:28:20.5067378Z Failed to start site. Revert by stopping site.
+2026-02-17T20:28:20.5072323Z Site: trmpythonback-mx stopped.
+2026-02-17T20:28:41.6963598Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:28:41.7007535Z Stop and delete container. Retry count = 0
+2026-02-17T20:28:41.7009680Z Stopping container: c1ef95e19af0_trmpythonback-mx.
+2026-02-17T20:28:46.7656036Z Deleting container: c1ef95e19af0_trmpythonback-mx. Retry count = 0
+2026-02-17T20:28:47.1102090Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:28:47.1103454Z Container is terminated. Total time elapsed: 5413 ms.
+2026-02-17T20:28:47.1112006Z Site: trmpythonback-mx stopped.
+2026-02-17T20:31:31.4987483Z Container start method called.
+2026-02-17T20:31:31.4995347Z Establishing network.
+2026-02-17T20:31:31.4998864Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:31:31.6940803Z Container is starting.
+2026-02-17T20:31:31.6951571Z Establishing user namespace if not established already.
+2026-02-17T20:31:31.6953002Z Establishing network if not established already.
+2026-02-17T20:31:31.6954404Z Mounting volumes.
+2026-02-17T20:31:31.6957456Z Nested mountpoint 
+2026-02-17T20:31:31.6973767Z Nested mountpoint volatile/logs
+2026-02-17T20:31:31.6996567Z Nested mountpoint 
+2026-02-17T20:31:31.7004517Z Nested mountpoint 
+2026-02-17T20:31:31.7060074Z Nested mountpoint 
+2026-02-17T20:31:31.7521197Z Creating container.
+2026-02-17T20:31:31.7522292Z Creating pipes for streaming container io.
+2026-02-17T20:31:31.7526251Z Creating stdout named pipe at /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stdout_e2100df0f1474522813d28f4f18dac2b.
+2026-02-17T20:31:31.7563944Z Successfully created stdout named pipe at: /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stdout_e2100df0f1474522813d28f4f18dac2b.
+2026-02-17T20:31:31.7568466Z Opening named pipe /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stdout_e2100df0f1474522813d28f4f18dac2b for reading in non-blocking mode.
+2026-02-17T20:31:31.7569891Z Successfully opened named pipe: /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stdout_e2100df0f1474522813d28f4f18dac2b.
+2026-02-17T20:31:31.7571228Z Successfully removed non-blocking flag from /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stdout_e2100df0f1474522813d28f4f18dac2b.
+2026-02-17T20:31:31.7577554Z Creating stderr named pipe at /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stderr_7b234b35bade458db2afadfff1b1acb7.
+2026-02-17T20:31:31.7579150Z Successfully created stderr named pipe at: /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stderr_7b234b35bade458db2afadfff1b1acb7.
+2026-02-17T20:31:31.7580133Z Opening named pipe /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stderr_7b234b35bade458db2afadfff1b1acb7 for reading in non-blocking mode.
+2026-02-17T20:31:31.7581181Z Successfully opened named pipe: /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stderr_7b234b35bade458db2afadfff1b1acb7.
+2026-02-17T20:31:31.7582074Z Successfully removed non-blocking flag from /podr/container/pipe/8e37ee23ecd8_trmpythonback-mx/stderr_7b234b35bade458db2afadfff1b1acb7.
+2026-02-17T20:31:31.7583168Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:31:31.9582206Z Starting container: 8e37ee23ecd8_trmpythonback-mx.
+2026-02-17T20:31:31.9736919Z Starting watchers and probes.
+2026-02-17T20:31:31.9739939Z Starting metrics collection.
+2026-02-17T20:31:31.9742249Z Container is running.
+2026-02-17T20:31:31.9827135Z Container start method finished after 483 ms.
+2026-02-17T20:31:43.0724871Z Container has finished running with exit code: 3.
+2026-02-17T20:31:43.0726158Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:31:43.0740292Z Stop and delete container. Retry count = 0
+2026-02-17T20:31:43.0741359Z Stopping container: 8e37ee23ecd8_trmpythonback-mx.
+2026-02-17T20:31:43.1106012Z Deleting container: 8e37ee23ecd8_trmpythonback-mx. Retry count = 0
+2026-02-17T20:31:43.2806966Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:31:43.2808889Z Container is terminated. Total time elapsed: 208 ms.
+2026-02-17T20:31:43.2809906Z Site container: trmpythonback-mx terminated during site startup.
+2026-02-17T20:31:43.2884508Z Site startup probe failed after 11.3050844 seconds.
+2026-02-17T20:31:43.3298919Z Failed to start site. Revert by stopping site.
+2026-02-17T20:31:43.3302286Z Site: trmpythonback-mx stopped.
+2026-02-17T20:35:06.3779917Z Container start method called.
+2026-02-17T20:35:06.3793885Z Establishing network.
+2026-02-17T20:35:06.3796358Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:35:57.8003084Z Image appsvc/python:3.11_20260203.2.tuxprod is pulled from registry 10.1.0.5:13209
+2026-02-17T20:35:57.8004838Z Container is starting.
+2026-02-17T20:35:57.8079207Z Establishing user namespace if not established already.
+2026-02-17T20:35:57.8082173Z Establishing network if not established already.
+2026-02-17T20:35:57.8087819Z Mounting volumes.
+2026-02-17T20:35:57.8089668Z Nested mountpoint 
+2026-02-17T20:35:57.8292974Z Nested mountpoint volatile/logs
+2026-02-17T20:35:57.8342608Z Nested mountpoint 
+2026-02-17T20:35:57.8437219Z Nested mountpoint 
+2026-02-17T20:35:57.8451537Z Nested mountpoint 
+2026-02-17T20:35:57.9306849Z Creating container.
+2026-02-17T20:35:57.9307843Z Creating pipes for streaming container io.
+2026-02-17T20:35:57.9308731Z Creating stdout named pipe at /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stdout_b3543c4cc67c4e3980211a6b57f343c2.
+2026-02-17T20:35:57.9349540Z Successfully created stdout named pipe at: /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stdout_b3543c4cc67c4e3980211a6b57f343c2.
+2026-02-17T20:35:57.9350607Z Opening named pipe /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stdout_b3543c4cc67c4e3980211a6b57f343c2 for reading in non-blocking mode.
+2026-02-17T20:35:57.9351709Z Successfully opened named pipe: /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stdout_b3543c4cc67c4e3980211a6b57f343c2.
+2026-02-17T20:35:57.9352610Z Successfully removed non-blocking flag from /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stdout_b3543c4cc67c4e3980211a6b57f343c2.
+2026-02-17T20:35:57.9355008Z Creating stderr named pipe at /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stderr_86346624b2d04b77ae8b7ed5c3c2a9b6.
+2026-02-17T20:35:57.9356490Z Successfully created stderr named pipe at: /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stderr_86346624b2d04b77ae8b7ed5c3c2a9b6.
+2026-02-17T20:35:57.9357377Z Opening named pipe /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stderr_86346624b2d04b77ae8b7ed5c3c2a9b6 for reading in non-blocking mode.
+2026-02-17T20:35:57.9358357Z Successfully opened named pipe: /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stderr_86346624b2d04b77ae8b7ed5c3c2a9b6.
+2026-02-17T20:35:57.9359243Z Successfully removed non-blocking flag from /podr/container/pipe/a4bff67a42e6_trmpythonback-mx/stderr_86346624b2d04b77ae8b7ed5c3c2a9b6.
+2026-02-17T20:35:57.9360273Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:35:59.6803019Z Starting container: a4bff67a42e6_trmpythonback-mx.
+2026-02-17T20:35:59.7037995Z Starting watchers and probes.
+2026-02-17T20:35:59.7041776Z Starting metrics collection.
+2026-02-17T20:35:59.7043176Z Container is running.
+2026-02-17T20:36:02.1432433Z Container start method finished after 55765 ms.
+2026-02-17T20:36:54.4233679Z Container has finished running with exit code: 3.
+2026-02-17T20:36:54.4237825Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:36:54.4240266Z Stop and delete container. Retry count = 0
+2026-02-17T20:36:54.4241226Z Stopping container: a4bff67a42e6_trmpythonback-mx.
+2026-02-17T20:36:54.4946079Z Deleting container: a4bff67a42e6_trmpythonback-mx. Retry count = 0
+2026-02-17T20:36:57.5249765Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:36:57.5260808Z Container is terminated. Total time elapsed: 3102 ms.
+2026-02-17T20:36:57.5262957Z Site container: trmpythonback-mx terminated during site startup.
+2026-02-17T20:36:57.5762838Z Site startup probe failed after 55.4235918 seconds.
+2026-02-17T20:36:57.9341972Z Failed to start site. Revert by stopping site.
+2026-02-17T20:36:57.9376901Z Site: trmpythonback-mx stopped.
+2026-02-17T20:37:04.0863575Z Container start method called.
+2026-02-17T20:37:04.0866182Z Establishing network.
+2026-02-17T20:37:04.0867546Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:37:04.4353449Z Container is starting.
+2026-02-17T20:37:04.4373421Z Establishing user namespace if not established already.
+2026-02-17T20:37:04.4400746Z Establishing network if not established already.
+2026-02-17T20:37:04.4404258Z Mounting volumes.
+2026-02-17T20:37:04.4406235Z Nested mountpoint 
+2026-02-17T20:37:04.7447318Z Nested mountpoint volatile/logs
+2026-02-17T20:37:04.7463014Z Nested mountpoint 
+2026-02-17T20:37:04.7469536Z Nested mountpoint 
+2026-02-17T20:37:04.7474893Z Nested mountpoint 
+2026-02-17T20:37:05.0062886Z Creating container.
+2026-02-17T20:37:05.0066602Z Creating pipes for streaming container io.
+2026-02-17T20:37:05.0067647Z Creating stdout named pipe at /podr/container/pipe/a37338e23649_trmpythonback-mx/stdout_74e9fd02410f419c899b02cfb85436ce.
+2026-02-17T20:37:05.0069334Z Successfully created stdout named pipe at: /podr/container/pipe/a37338e23649_trmpythonback-mx/stdout_74e9fd02410f419c899b02cfb85436ce.
+2026-02-17T20:37:05.0070180Z Opening named pipe /podr/container/pipe/a37338e23649_trmpythonback-mx/stdout_74e9fd02410f419c899b02cfb85436ce for reading in non-blocking mode.
+2026-02-17T20:37:05.0071166Z Successfully opened named pipe: /podr/container/pipe/a37338e23649_trmpythonback-mx/stdout_74e9fd02410f419c899b02cfb85436ce.
+2026-02-17T20:37:05.0072019Z Successfully removed non-blocking flag from /podr/container/pipe/a37338e23649_trmpythonback-mx/stdout_74e9fd02410f419c899b02cfb85436ce.
+2026-02-17T20:37:05.0072895Z Creating stderr named pipe at /podr/container/pipe/a37338e23649_trmpythonback-mx/stderr_26f26260a06a4c48ba82c782a9d5d538.
+2026-02-17T20:37:05.0074126Z Successfully created stderr named pipe at: /podr/container/pipe/a37338e23649_trmpythonback-mx/stderr_26f26260a06a4c48ba82c782a9d5d538.
+2026-02-17T20:37:05.0074885Z Opening named pipe /podr/container/pipe/a37338e23649_trmpythonback-mx/stderr_26f26260a06a4c48ba82c782a9d5d538 for reading in non-blocking mode.
+2026-02-17T20:37:05.0075901Z Successfully opened named pipe: /podr/container/pipe/a37338e23649_trmpythonback-mx/stderr_26f26260a06a4c48ba82c782a9d5d538.
+2026-02-17T20:37:05.0076805Z Successfully removed non-blocking flag from /podr/container/pipe/a37338e23649_trmpythonback-mx/stderr_26f26260a06a4c48ba82c782a9d5d538.
+2026-02-17T20:37:05.0077748Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:37:08.5962450Z Starting container: a37338e23649_trmpythonback-mx.
+2026-02-17T20:37:08.7279504Z Starting watchers and probes.
+2026-02-17T20:37:08.7449664Z Starting metrics collection.
+2026-02-17T20:37:08.7464287Z Container is running.
+2026-02-17T20:37:09.3127427Z Container start method finished after 5220 ms.
+2026-02-17T20:38:13.6366710Z Container has finished running with exit code: 3.
+2026-02-17T20:38:13.6369349Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:38:13.6373781Z Stop and delete container. Retry count = 0
+2026-02-17T20:38:13.6379819Z Stopping container: a37338e23649_trmpythonback-mx.
+2026-02-17T20:38:13.6952361Z Deleting container: a37338e23649_trmpythonback-mx. Retry count = 0
+2026-02-17T20:38:14.0709887Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:38:14.0712336Z Container is terminated. Total time elapsed: 434 ms.
+2026-02-17T20:38:14.0714388Z Site container: trmpythonback-mx terminated during site startup.
+2026-02-17T20:38:14.1083187Z Site startup probe failed after 64.7523976 seconds.
+2026-02-17T20:38:14.1790380Z Failed to start site. Revert by stopping site.
+2026-02-17T20:38:14.1812863Z Site: trmpythonback-mx stopped.
+2026-02-17T20:41:28.3742763Z Container start method called.
+2026-02-17T20:41:28.3749670Z Establishing network.
+2026-02-17T20:41:28.3752501Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:41:28.6579427Z Image appsvc/python:3.11_20260203.2.tuxprod is pulled from registry 10.1.0.4:13209
+2026-02-17T20:41:28.6581200Z Container is starting.
+2026-02-17T20:41:28.6582615Z Establishing user namespace if not established already.
+2026-02-17T20:41:28.6583241Z Establishing network if not established already.
+2026-02-17T20:41:28.6583904Z Mounting volumes.
+2026-02-17T20:41:28.6585154Z Nested mountpoint 
+2026-02-17T20:41:28.6592846Z Nested mountpoint volatile/logs
+2026-02-17T20:41:28.6695556Z Nested mountpoint 
+2026-02-17T20:41:28.6704881Z Nested mountpoint 
+2026-02-17T20:41:28.6742234Z Nested mountpoint 
+2026-02-17T20:41:28.7343417Z Creating container.
+2026-02-17T20:41:28.7366938Z Creating pipes for streaming container io.
+2026-02-17T20:41:28.7370031Z Creating stdout named pipe at /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stdout_b76cbf3ed4704ec1a94e2ea2c11cb633.
+2026-02-17T20:41:28.7388459Z Successfully created stdout named pipe at: /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stdout_b76cbf3ed4704ec1a94e2ea2c11cb633.
+2026-02-17T20:41:28.7396031Z Opening named pipe /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stdout_b76cbf3ed4704ec1a94e2ea2c11cb633 for reading in non-blocking mode.
+2026-02-17T20:41:28.7408674Z Successfully opened named pipe: /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stdout_b76cbf3ed4704ec1a94e2ea2c11cb633.
+2026-02-17T20:41:28.7418083Z Successfully removed non-blocking flag from /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stdout_b76cbf3ed4704ec1a94e2ea2c11cb633.
+2026-02-17T20:41:28.7425246Z Creating stderr named pipe at /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stderr_cffdc59222524aefa9768d8597fa09c8.
+2026-02-17T20:41:28.7429729Z Successfully created stderr named pipe at: /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stderr_cffdc59222524aefa9768d8597fa09c8.
+2026-02-17T20:41:28.7430725Z Opening named pipe /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stderr_cffdc59222524aefa9768d8597fa09c8 for reading in non-blocking mode.
+2026-02-17T20:41:28.7432057Z Successfully opened named pipe: /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stderr_cffdc59222524aefa9768d8597fa09c8.
+2026-02-17T20:41:28.7434302Z Successfully removed non-blocking flag from /podr/container/pipe/90ed1d01a873_trmpythonback-mx/stderr_cffdc59222524aefa9768d8597fa09c8.
+2026-02-17T20:41:28.7436984Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:41:28.9044935Z Starting container: 90ed1d01a873_trmpythonback-mx.
+2026-02-17T20:41:28.9333467Z Starting watchers and probes.
+2026-02-17T20:41:28.9356612Z Starting metrics collection.
+2026-02-17T20:41:28.9366753Z Container is running.
+2026-02-17T20:41:28.9552174Z Container start method finished after 580 ms.
+2026-02-17T20:41:37.0636465Z Site startup probe succeeded after 8.1072151 seconds.
+2026-02-17T20:41:37.1968040Z Site is running with deployment version: 2a59f216-5519-4b28-8cb3-ed26c0afa7a4
+2026-02-17T20:41:37.1970391Z Site started.
+2026-02-17T20:41:37.2027965Z Site is running with patch version PYTHON 3.11.14
+2026-02-17T20:42:29.2871363Z Container start method called.
+2026-02-17T20:42:29.2874592Z Establishing network.
+2026-02-17T20:42:29.2876390Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:42:29.8715324Z Container is starting.
+2026-02-17T20:42:29.8831172Z Establishing user namespace if not established already.
+2026-02-17T20:42:29.8857854Z Establishing network if not established already.
+2026-02-17T20:42:29.8860389Z Mounting volumes.
+2026-02-17T20:42:29.8877101Z Nested mountpoint 
+2026-02-17T20:42:29.8942077Z Nested mountpoint volatile/logs
+2026-02-17T20:42:29.9027002Z Nested mountpoint 
+2026-02-17T20:42:29.9036559Z Nested mountpoint 
+2026-02-17T20:42:29.9110692Z Nested mountpoint 
+2026-02-17T20:42:30.2487744Z Creating container.
+2026-02-17T20:42:30.2488842Z Creating pipes for streaming container io.
+2026-02-17T20:42:30.2489754Z Creating stdout named pipe at /podr/container/pipe/31facb709bce_trmpythonback-mx/stdout_e48474d9dd624e66a514c6ad3cb6f14b.
+2026-02-17T20:42:30.2526640Z Successfully created stdout named pipe at: /podr/container/pipe/31facb709bce_trmpythonback-mx/stdout_e48474d9dd624e66a514c6ad3cb6f14b.
+2026-02-17T20:42:30.2529146Z Opening named pipe /podr/container/pipe/31facb709bce_trmpythonback-mx/stdout_e48474d9dd624e66a514c6ad3cb6f14b for reading in non-blocking mode.
+2026-02-17T20:42:30.2533719Z Successfully opened named pipe: /podr/container/pipe/31facb709bce_trmpythonback-mx/stdout_e48474d9dd624e66a514c6ad3cb6f14b.
+2026-02-17T20:42:30.2534742Z Successfully removed non-blocking flag from /podr/container/pipe/31facb709bce_trmpythonback-mx/stdout_e48474d9dd624e66a514c6ad3cb6f14b.
+2026-02-17T20:42:30.2537562Z Creating stderr named pipe at /podr/container/pipe/31facb709bce_trmpythonback-mx/stderr_9c64ee29419a492ea8b2424d4834393a.
+2026-02-17T20:42:30.2542065Z Successfully created stderr named pipe at: /podr/container/pipe/31facb709bce_trmpythonback-mx/stderr_9c64ee29419a492ea8b2424d4834393a.
+2026-02-17T20:42:30.2543117Z Opening named pipe /podr/container/pipe/31facb709bce_trmpythonback-mx/stderr_9c64ee29419a492ea8b2424d4834393a for reading in non-blocking mode.
+2026-02-17T20:42:30.2544025Z Successfully opened named pipe: /podr/container/pipe/31facb709bce_trmpythonback-mx/stderr_9c64ee29419a492ea8b2424d4834393a.
+2026-02-17T20:42:30.2571959Z Successfully removed non-blocking flag from /podr/container/pipe/31facb709bce_trmpythonback-mx/stderr_9c64ee29419a492ea8b2424d4834393a.
+2026-02-17T20:42:30.2573651Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:42:30.8095277Z Starting container: 31facb709bce_trmpythonback-mx.
+2026-02-17T20:42:30.9265319Z Starting watchers and probes.
+2026-02-17T20:42:30.9654591Z Starting metrics collection.
+2026-02-17T20:42:30.9736755Z Container is running.
+2026-02-17T20:42:31.0397079Z Container start method finished after 1752 ms.
+2026-02-17T20:43:10.5200108Z Container has finished running with exit code: 3.
+2026-02-17T20:43:10.5214411Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:43:10.5224757Z Stop and delete container. Retry count = 0
+2026-02-17T20:43:10.5228028Z Stopping container: 31facb709bce_trmpythonback-mx.
+2026-02-17T20:43:10.6444358Z Deleting container: 31facb709bce_trmpythonback-mx. Retry count = 0
+2026-02-17T20:43:11.3810002Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:43:11.3811665Z Container is terminated. Total time elapsed: 859 ms.
+2026-02-17T20:43:11.3812668Z Site container: trmpythonback-mx terminated during site startup.
+2026-02-17T20:43:11.3884775Z Site startup probe failed after 40.3474638 seconds.
+2026-02-17T20:43:11.4768416Z Failed to start site. Revert by stopping site.
+2026-02-17T20:43:11.4772490Z Site: trmpythonback-mx stopped.
+2026-02-17T20:43:31.7706730Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:43:31.7947840Z Stop and delete container. Retry count = 0
+2026-02-17T20:43:31.7955228Z Stopping container: 90ed1d01a873_trmpythonback-mx.
+2026-02-17T20:43:37.0164789Z Deleting container: 90ed1d01a873_trmpythonback-mx. Retry count = 0
+2026-02-17T20:43:39.8115585Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:43:39.8139588Z Container is terminated. Total time elapsed: 8042 ms.
+2026-02-17T20:43:39.8140782Z Site: trmpythonback-mx stopped.
+2026-02-17T20:45:28.6481480Z Container start method called.
+2026-02-17T20:45:28.6500376Z Establishing network.
+2026-02-17T20:45:28.6502007Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:45:29.3081344Z Container is starting.
+2026-02-17T20:45:29.3112747Z Establishing user namespace if not established already.
+2026-02-17T20:45:29.3122196Z Establishing network if not established already.
+2026-02-17T20:45:29.3127014Z Mounting volumes.
+2026-02-17T20:45:29.3130084Z Nested mountpoint 
+2026-02-17T20:45:29.3142255Z Nested mountpoint volatile/logs
+2026-02-17T20:45:29.3209977Z Nested mountpoint 
+2026-02-17T20:45:29.3275910Z Nested mountpoint 
+2026-02-17T20:45:29.3290970Z Nested mountpoint 
+2026-02-17T20:45:29.3937819Z Creating container.
+2026-02-17T20:45:29.3940051Z Creating pipes for streaming container io.
+2026-02-17T20:45:29.3941317Z Creating stdout named pipe at /podr/container/pipe/03a60968fc35_trmpythonback-mx/stdout_d1ec014213054a6095009bc5183b9373.
+2026-02-17T20:45:29.3943490Z Successfully created stdout named pipe at: /podr/container/pipe/03a60968fc35_trmpythonback-mx/stdout_d1ec014213054a6095009bc5183b9373.
+2026-02-17T20:45:29.3944534Z Opening named pipe /podr/container/pipe/03a60968fc35_trmpythonback-mx/stdout_d1ec014213054a6095009bc5183b9373 for reading in non-blocking mode.
+2026-02-17T20:45:29.3947215Z Successfully opened named pipe: /podr/container/pipe/03a60968fc35_trmpythonback-mx/stdout_d1ec014213054a6095009bc5183b9373.
+2026-02-17T20:45:29.3948578Z Successfully removed non-blocking flag from /podr/container/pipe/03a60968fc35_trmpythonback-mx/stdout_d1ec014213054a6095009bc5183b9373.
+2026-02-17T20:45:29.3949617Z Creating stderr named pipe at /podr/container/pipe/03a60968fc35_trmpythonback-mx/stderr_36cb2911d9254f30bf0dcc7e928c62c6.
+2026-02-17T20:45:29.3951542Z Successfully created stderr named pipe at: /podr/container/pipe/03a60968fc35_trmpythonback-mx/stderr_36cb2911d9254f30bf0dcc7e928c62c6.
+2026-02-17T20:45:29.3954464Z Opening named pipe /podr/container/pipe/03a60968fc35_trmpythonback-mx/stderr_36cb2911d9254f30bf0dcc7e928c62c6 for reading in non-blocking mode.
+2026-02-17T20:45:29.3955672Z Successfully opened named pipe: /podr/container/pipe/03a60968fc35_trmpythonback-mx/stderr_36cb2911d9254f30bf0dcc7e928c62c6.
+2026-02-17T20:45:29.3957773Z Successfully removed non-blocking flag from /podr/container/pipe/03a60968fc35_trmpythonback-mx/stderr_36cb2911d9254f30bf0dcc7e928c62c6.
+2026-02-17T20:45:29.3961889Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:45:29.5930840Z Starting container: 03a60968fc35_trmpythonback-mx.
+2026-02-17T20:45:29.6068688Z Starting watchers and probes.
+2026-02-17T20:45:29.6071491Z Starting metrics collection.
+2026-02-17T20:45:29.6072786Z Container is running.
+2026-02-17T20:45:29.6493888Z Container start method finished after 999 ms.
+2026-02-17T20:45:42.5827913Z Site startup probe succeeded after 12.9322601 seconds.
+2026-02-17T20:45:42.8006879Z Site is running with deployment version: dcf2bc90-3fc5-452d-be65-69966d99458b
+2026-02-17T20:45:42.8009644Z Site started.
+2026-02-17T20:45:42.8068348Z Site is running with patch version PYTHON 3.11.14
+2026-02-17T20:46:56.2544653Z Container start method called.
+2026-02-17T20:46:56.2547773Z Establishing network.
+2026-02-17T20:46:56.2548945Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:46:56.6828236Z Container is starting.
+2026-02-17T20:46:56.6832551Z Establishing user namespace if not established already.
+2026-02-17T20:46:56.6833609Z Establishing network if not established already.
+2026-02-17T20:46:56.6834652Z Mounting volumes.
+2026-02-17T20:46:56.6835897Z Nested mountpoint 
+2026-02-17T20:46:56.6891255Z Nested mountpoint volatile/logs
+2026-02-17T20:46:56.6917582Z Nested mountpoint 
+2026-02-17T20:46:56.7025657Z Nested mountpoint 
+2026-02-17T20:46:56.7072521Z Nested mountpoint 
+2026-02-17T20:46:57.0420111Z Creating container.
+2026-02-17T20:46:57.0438355Z Creating pipes for streaming container io.
+2026-02-17T20:46:57.0448364Z Creating stdout named pipe at /podr/container/pipe/5156180b339d_trmpythonback-mx/stdout_807da6e980954691b04c57681a4ae0ae.
+2026-02-17T20:46:57.0464241Z Successfully created stdout named pipe at: /podr/container/pipe/5156180b339d_trmpythonback-mx/stdout_807da6e980954691b04c57681a4ae0ae.
+2026-02-17T20:46:57.0474028Z Opening named pipe /podr/container/pipe/5156180b339d_trmpythonback-mx/stdout_807da6e980954691b04c57681a4ae0ae for reading in non-blocking mode.
+2026-02-17T20:46:57.0478597Z Successfully opened named pipe: /podr/container/pipe/5156180b339d_trmpythonback-mx/stdout_807da6e980954691b04c57681a4ae0ae.
+2026-02-17T20:46:57.0485035Z Successfully removed non-blocking flag from /podr/container/pipe/5156180b339d_trmpythonback-mx/stdout_807da6e980954691b04c57681a4ae0ae.
+2026-02-17T20:46:57.0495540Z Creating stderr named pipe at /podr/container/pipe/5156180b339d_trmpythonback-mx/stderr_e8ab066d85e24b1a93348670f22e6d74.
+2026-02-17T20:46:57.0506021Z Successfully created stderr named pipe at: /podr/container/pipe/5156180b339d_trmpythonback-mx/stderr_e8ab066d85e24b1a93348670f22e6d74.
+2026-02-17T20:46:57.0515253Z Opening named pipe /podr/container/pipe/5156180b339d_trmpythonback-mx/stderr_e8ab066d85e24b1a93348670f22e6d74 for reading in non-blocking mode.
+2026-02-17T20:46:57.0522952Z Successfully opened named pipe: /podr/container/pipe/5156180b339d_trmpythonback-mx/stderr_e8ab066d85e24b1a93348670f22e6d74.
+2026-02-17T20:46:57.0525833Z Successfully removed non-blocking flag from /podr/container/pipe/5156180b339d_trmpythonback-mx/stderr_e8ab066d85e24b1a93348670f22e6d74.
+2026-02-17T20:46:57.0527604Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:46:59.4027766Z Container start up interrupted. Revert by terminate.
+2026-02-17T20:46:59.4029080Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:46:59.4030897Z Stop and delete container. Retry count = 0
+2026-02-17T20:46:59.4031977Z Stopping container: 5156180b339d_trmpythonback-mx.
+2026-02-17T20:46:59.4275447Z Stop container failed with unexpected exception. Proceed regardless.
+2026-02-17T20:46:59.4545150Z Get exit code failed with unexpected exception. Proceed regardless.
+2026-02-17T20:46:59.4556745Z Deleting container: 5156180b339d_trmpythonback-mx. Retry count = 0
+2026-02-17T20:47:01.4638160Z Stop and delete container. Retry count = 1
+2026-02-17T20:47:01.4639739Z Stopping container: 5156180b339d_trmpythonback-mx.
+2026-02-17T20:47:01.4870940Z Stop container failed with unexpected exception. Proceed regardless.
+2026-02-17T20:47:01.5127391Z Get exit code failed with unexpected exception. Proceed regardless.
+2026-02-17T20:47:03.5114530Z Stop and delete container. Retry count = 2
+2026-02-17T20:47:03.5116198Z Stopping container: 5156180b339d_trmpythonback-mx.
+2026-02-17T20:47:03.5168209Z Stop container failed with unexpected exception. Proceed regardless.
+2026-02-17T20:47:03.5516915Z Get exit code failed with unexpected exception. Proceed regardless.
+2026-02-17T20:47:05.5486451Z Stop and delete container. Retry count = 3
+2026-02-17T20:47:05.5488846Z Stopping container: 5156180b339d_trmpythonback-mx.
+2026-02-17T20:47:05.5563941Z Stop container failed with unexpected exception. Proceed regardless.
+2026-02-17T20:47:05.5632178Z Get exit code failed with unexpected exception. Proceed regardless.
+2026-02-17T20:47:07.5630590Z Failed to stop and delete container after 3 retries. Skip.
+2026-02-17T20:47:07.5631998Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:47:07.5633146Z Container is terminated. Total time elapsed: 8160 ms.
+2026-02-17T20:47:07.5634084Z Site container: trmpythonback-mx terminated during site startup.
+2026-02-17T20:47:07.6268443Z Site: trmpythonback-mx stopped.
+2026-02-17T20:47:27.8674711Z Container is terminating. Grace period: 5 seconds.
+2026-02-17T20:47:28.1300922Z Stop and delete container. Retry count = 0
+2026-02-17T20:47:28.1302083Z Stopping container: 03a60968fc35_trmpythonback-mx.
+2026-02-17T20:47:33.1548298Z Deleting container: 03a60968fc35_trmpythonback-mx. Retry count = 0
+2026-02-17T20:47:34.3209093Z Container spec TerminationMessagePolicy  path 
+2026-02-17T20:47:34.3212637Z Container is terminated. Total time elapsed: 6444 ms.
+2026-02-17T20:47:34.3213950Z Site: trmpythonback-mx stopped.
+2026-02-17T20:47:58.8029255Z Container start method called.
+2026-02-17T20:47:58.8149383Z Establishing network.
+2026-02-17T20:47:58.8151478Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:47:59.3618247Z Container is starting.
+2026-02-17T20:47:59.3643815Z Establishing user namespace if not established already.
+2026-02-17T20:47:59.3652284Z Establishing network if not established already.
+2026-02-17T20:47:59.3666324Z Mounting volumes.
+2026-02-17T20:47:59.3721780Z Nested mountpoint 
+2026-02-17T20:47:59.3926818Z Nested mountpoint volatile/logs
+2026-02-17T20:47:59.4046818Z Nested mountpoint 
+2026-02-17T20:47:59.4265969Z Nested mountpoint 
+2026-02-17T20:47:59.4473470Z Nested mountpoint 
+2026-02-17T20:47:59.5524162Z Creating container.
+2026-02-17T20:47:59.5527384Z Creating pipes for streaming container io.
+2026-02-17T20:47:59.5528403Z Creating stdout named pipe at /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stdout_fd3368b2c327401bac2b95c1cbe14e86.
+2026-02-17T20:47:59.5530102Z Successfully created stdout named pipe at: /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stdout_fd3368b2c327401bac2b95c1cbe14e86.
+2026-02-17T20:47:59.5530945Z Opening named pipe /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stdout_fd3368b2c327401bac2b95c1cbe14e86 for reading in non-blocking mode.
+2026-02-17T20:47:59.5531999Z Successfully opened named pipe: /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stdout_fd3368b2c327401bac2b95c1cbe14e86.
+2026-02-17T20:47:59.5534205Z Successfully removed non-blocking flag from /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stdout_fd3368b2c327401bac2b95c1cbe14e86.
+2026-02-17T20:47:59.5535430Z Creating stderr named pipe at /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stderr_747fe8030fc041c1915777249bc15969.
+2026-02-17T20:47:59.5565665Z Successfully created stderr named pipe at: /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stderr_747fe8030fc041c1915777249bc15969.
+2026-02-17T20:47:59.5573671Z Opening named pipe /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stderr_747fe8030fc041c1915777249bc15969 for reading in non-blocking mode.
+2026-02-17T20:47:59.5591726Z Successfully opened named pipe: /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stderr_747fe8030fc041c1915777249bc15969.
+2026-02-17T20:47:59.5607837Z Successfully removed non-blocking flag from /podr/container/pipe/3a826ab160ff_trmpythonback-mx/stderr_747fe8030fc041c1915777249bc15969.
+2026-02-17T20:47:59.5609810Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:48:00.3723155Z Starting container: 3a826ab160ff_trmpythonback-mx.
+2026-02-17T20:48:00.4131909Z Starting watchers and probes.
+2026-02-17T20:48:00.4142568Z Starting metrics collection.
+2026-02-17T20:48:00.4210660Z Container is running.
+2026-02-17T20:48:00.4853851Z Container start method finished after 1682 ms.
+2026-02-17T20:48:09.5473515Z Site startup probe succeeded after 9.0605896 seconds.
+2026-02-17T20:48:09.6075681Z Site is running with deployment version: dcf2bc90-3fc5-452d-be65-69966d99458b
+2026-02-17T20:48:09.6078063Z Site started.
+2026-02-17T20:48:09.6104905Z Site is running with patch version PYTHON 3.11.14
+2026-02-17T20:53:33.3289485Z Container start method called.
+2026-02-17T20:53:33.3302722Z Establishing network.
+2026-02-17T20:53:33.3307891Z Pulling image: appsvc/python:3.11_20260203.2.tuxprod.
+2026-02-17T20:53:34.3213847Z Container is starting.
+2026-02-17T20:53:34.3225572Z Establishing user namespace if not established already.
+2026-02-17T20:53:34.3228521Z Establishing network if not established already.
+2026-02-17T20:53:34.3230663Z Mounting volumes.
+2026-02-17T20:53:34.3232150Z Nested mountpoint 
+2026-02-17T20:53:34.3347259Z Nested mountpoint volatile/logs
+2026-02-17T20:53:34.3564007Z Nested mountpoint 
+2026-02-17T20:53:34.3585382Z Nested mountpoint 
+2026-02-17T20:53:34.3915372Z Nested mountpoint 
+2026-02-17T20:53:38.1565529Z Creating container.
+2026-02-17T20:53:38.1567672Z Creating pipes for streaming container io.
+2026-02-17T20:53:38.1571699Z Creating stdout named pipe at /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stdout_113b33aaa2114ac597fde349ab2005eb.
+2026-02-17T20:53:38.1790706Z Successfully created stdout named pipe at: /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stdout_113b33aaa2114ac597fde349ab2005eb.
+2026-02-17T20:53:38.1794269Z Opening named pipe /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stdout_113b33aaa2114ac597fde349ab2005eb for reading in non-blocking mode.
+2026-02-17T20:53:38.1796682Z Successfully opened named pipe: /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stdout_113b33aaa2114ac597fde349ab2005eb.
+2026-02-17T20:53:38.1801106Z Successfully removed non-blocking flag from /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stdout_113b33aaa2114ac597fde349ab2005eb.
+2026-02-17T20:53:38.1802190Z Creating stderr named pipe at /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stderr_af6729651c0948b282a8a1a92bab80cc.
+2026-02-17T20:53:38.1803715Z Successfully created stderr named pipe at: /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stderr_af6729651c0948b282a8a1a92bab80cc.
+2026-02-17T20:53:38.1804547Z Opening named pipe /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stderr_af6729651c0948b282a8a1a92bab80cc for reading in non-blocking mode.
+2026-02-17T20:53:38.1806466Z Successfully opened named pipe: /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stderr_af6729651c0948b282a8a1a92bab80cc.
+2026-02-17T20:53:38.1807539Z Successfully removed non-blocking flag from /podr/container/pipe/c95cb7f61830_trmpythonback-mx/stderr_af6729651c0948b282a8a1a92bab80cc.
+2026-02-17T20:53:38.1808724Z Creating container with image: appsvc/python:3.11_20260203.2.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20260203.2.tuxprod
+2026-02-17T20:53:43.7920070Z Starting container: c95cb7f61830_trmpythonback-mx.
+2026-02-17T20:53:44.1349996Z Starting watchers and probes.
+2026-02-17T20:53:44.1369763Z Starting metrics collection.
+2026-02-17T20:53:44.1371275Z Container is running.
+2026-02-17T20:53:44.9188063Z Container start method finished after 11589 ms.

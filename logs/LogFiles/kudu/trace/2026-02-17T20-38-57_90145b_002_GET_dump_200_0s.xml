@@ -1,0 +1,4 @@
+<step title="Incoming Request" date="2026-02-17T20:38:57.457" instance="90145b" url="/dump" method="GET" type="request" pid="768,1,17" Host="trmpythonback-mx.scm.azurewebsites.net" User-Agent="AZURECLI/2.79.0 (MSI)" Accept-Encoding="identity" Authorization="Bea..." x-ms-client-request-id="abdef3cb-0c40-11f1-958a-00090faa0001" X-ARR-LOG-ID="abdef3cb-0c40-11f1-958a-00090faa0001" CLIENT-IP="181.49.36.50:55268" X-SITE-DEPLOYMENT-ID="trmpythonback-mx" WAS-DEFAULT-HOSTNAME="trmpythonback-mx.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/dump" X-Client-IP="181.49.36.50" X-Client-Port="55268" >
+  <step title="Cleanup Xml Logs" date="2026-02-17T20:38:57.460" /><!-- duration: 3ms -->
+  <step title="Outgoing response" date="2026-02-17T20:38:57.663" type="response" statusCode="200" statusText="OK" /><!-- duration: 2ms -->
+</step><!-- duration: 209ms -->

@@ -17,8 +17,8 @@ class Settings(BaseSettings):
     DB_PASSWORD: str
     DB_DRIVER: str = "ODBC Driver 18 for SQL Server"
 
-    # Autenticación
-    API_KEY: str
+    # Autenticación (opcional)
+    API_KEY: str = ""
 
     # Aplicación
     APP_TITLE: str = "MonedaValor API"
@@ -27,6 +27,7 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
+        extra = "ignore"
 
 
 @lru_cache()
