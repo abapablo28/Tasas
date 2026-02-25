@@ -10,7 +10,8 @@ Endpoints:
 NOTA: /formato-sap debe estar ANTES de /{instrumento} para evitar conflicto de rutas.
 """
 
-from fastapi import FastAPI, Depends, HTTPException, Query, status
+from fastapi import FastAPI, Depends, HTTPException, Query, status, Response
+from fastapi.responses import PlainTextResponse
 from fastapi.middleware.cors import CORSMiddleware
 from typing import Optional
 from datetime import datetime
@@ -149,9 +150,14 @@ async def list_moneda_valor(
 # ---------------------------------------------------------------------------
 @app.get(
     "/api/moneda-valor/formato-sap",
-    response_model=TasaCambioSAP,
     tags=["MonedaValor"],
     summary="Obtener tasa de cambio en formato SAP fixed-width para TBD4",
+    description="Retorna una línea de texto plano de 237 caracteres formateada para el datafeed de SAP.",
+    responses={
+        200: {"content": {"text/plain": {}}, "description": "Línea de 237 caracteres"},
+        401: {"model": ErrorResponse},
+        404: {"model": ErrorResponse}
+    },
 )
 async def get_tasa_cambio_sap():
     """
@@ -184,7 +190,7 @@ async def get_tasa_cambio_sap():
             cursor = conn.cursor()
             # Buscar la primera fila de la tabla
             cursor.execute(
-                "SELECT TOP 1 SSINSTRUMNT, MIFEEDNAME, RATETYPE, TIMESTAMP_VALOR, CURRENCY FROM dbo.MonedaValor ORDER BY TIMESTAMP_VALOR DESC"
+                "SELECT SSINSTRUMNT, MIFEEDNAME, RATETYPE, TIMESTAMP_VALOR, CURRENCY FROM dbo.MonedaValor ORDER BY TIMESTAMP_VALOR DESC"
             )
             row = cursor.fetchone()
 
@@ -280,10 +286,8 @@ async def get_tasa_cambio_sap():
                     detail=f"Error en formato: se generaron {len(linea)} caracteres en lugar de 237.",
                 )
             
-            # Agregar newline
-            linea += "\n"
-            
-            return TasaCambioSAP(linea=linea)
+            # Retornar texto plano sin el newline al final
+            return PlainTextResponse(content=linea)
 
     except HTTPException:
         raise
