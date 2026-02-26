@@ -188,106 +188,117 @@ async def get_tasa_cambio_sap():
     try:
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            # Buscar la primera fila de la tabla
+            # Buscar todas las filas de la tabla
             cursor.execute(
                 "SELECT SSINSTRUMNT, MIFEEDNAME, RATETYPE, TIMESTAMP_VALOR, CURRENCY FROM dbo.MonedaValor ORDER BY TIMESTAMP_VALOR DESC"
             )
-            row = cursor.fetchone()
+            rows = cursor.fetchall()
 
-            if row is None:
+            if not rows:
                 raise HTTPException(
                     status_code=status.HTTP_404_NOT_FOUND,
                     detail="No se encontraron datos en la tabla MonedaValor.",
                 )
 
-            ssinstrumnt = row.SSINSTRUMNT.strip()
-            mifeedname = row.MIFEEDNAME.strip()
-            ratetype = row.RATETYPE.strip()
-            currency = row.CURRENCY.strip()
-            
-            # Parsear TIMESTAMP_VALOR: formato es YYYYMMDDHHMMSS+valor
-            # Ejemplo: 20260223140000+4235.500000
-            timestamp_valor = row.TIMESTAMP_VALOR
-            
-            # Extraer fecha (primeros 8 caracteres)
-            # Extraer hora (siguientes 6 caracteres)
-            # El resto es el valor (con signo)
-            if len(timestamp_valor) < 14:
-                raise HTTPException(
-                    status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                    detail=f"Formato TIMESTAMP_VALOR inválido: {timestamp_valor}",
-                )
-            
-            fecha_str = timestamp_valor[0:8]  # YYYYMMDD
-            hora_str = timestamp_valor[8:14]  # HHMMSS
-            valor_str_raw = timestamp_valor[14:]  # +4235.500000
+            lineas_formateadas = []
 
-            # Construir la línea con formato fixed-width (238 caracteres)
-            # Pos 1-20: RINID1 (SSINSTRUMNT)
-            rinid1 = ssinstrumnt.ljust(20)
+            for row in rows:
+                ssinstrumnt = row.SSINSTRUMNT.strip()
+                mifeedname = row.MIFEEDNAME.strip()
+                ratetype = row.RATETYPE.strip()
+                currency = row.CURRENCY.strip()
+                
+                # Parsear TIMESTAMP_VALOR: formato es YYYYMMDDHHMMSS+valor
+                # Ejemplo: 20260223140000+4235.500000
+                timestamp_valor = row.TIMESTAMP_VALOR
+                
+                # Extraer fecha (primeros 8 caracteres)
+                # Extraer hora (siguientes 6 caracteres)
+                # El resto es el valor (con signo)
+                if len(timestamp_valor) < 14:
+                    # Si una fila tiene un formato inválido, podemos saltarla o lanzar error.
+                    # Por ahora lanzamos error para mantener la integridad.
+                    raise HTTPException(
+                        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                        detail=f"Formato TIMESTAMP_VALOR inválido para {ssinstrumnt}: {timestamp_valor}",
+                    )
+                
+                fecha_str = timestamp_valor[0:8]  # YYYYMMDD
+                hora_str = timestamp_valor[8:14]  # HHMMSS
+                valor_str_raw = timestamp_valor[14:]  # +4235.500000
+
+                # Construir la línea con formato fixed-width (238 caracteres)
+                # Pos 1-20: RINID1 (SSINSTRUMNT)
+                rinid1 = ssinstrumnt.ljust(20)
+                
+                # Pos 21-35: RINID2 (MIFEEDNAME)
+                rinid2 = mifeedname.ljust(15)
+                
+                # Pos 36-50: SPRPTY (RATETYPE)
+                sprpty = ratetype.ljust(15)
+                
+                # Pos 51-52: SSTATS (OK)
+                sstats = "  "  # 2 espacios
+                
+                # Pos 53-132: ERROR (80 espacios)
+                error = " " * 80
+                
+                # Pos 133-142: RSUPID (10 espacios)
+                rsupid = " " * 10
+                
+                # Pos 143-152: RCONID (10 espacios)
+                rconid = " " * 10
+                
+                # Pos 153-157: RCONCN (5 espacios)
+                rconcn = " " * 5
+                
+                # Pos 158-165: DATE
+                date_val = fecha_str  # 8 caracteres
+                
+                # Pos 166-171: TIME
+                time_val = hora_str   # 6 caracteres
+                
+                # Pos 172-191: VALUE (20 caracteres, alineado a derecha)
+                valor_str = valor_str_raw.rjust(20)
+                
+                # Pos 192-196: CURRENCY
+                currency_val = currency.ljust(5)
+                
+                # Pos 197-201: MKIND (5 espacios)
+                mkind = " " * 5
+                
+                # Pos 202-208: CFFACT (7 espacios)
+                cffact = " " * 7
+                
+                # Pos 209-215: CTFACT (7 espacios)
+                ctfact = " " * 7
+                
+                # Pos 216-227: UNAME (12 espacios)
+                uname = " " * 12
+                
+                # Pos 228-237: RZUSATZ (10 espacios)
+                rzusatz = " " * 10
+                
+                # Ensamblar la línea completa (237 caracteres)
+                linea = (rinid1 + rinid2 + sprpty + sstats + error + rsupid + 
+                        rconid + rconcn + date_val + time_val + valor_str + currency_val + 
+                        mkind + cffact + ctfact + uname + rzusatz)
+                
+                # Verificar que tiene exactamente 237 caracteres
+                if len(linea) != 237:
+                    raise HTTPException(
+                        status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                        detail=f"Error en formato para {ssinstrumnt}: se generaron {len(linea)} caracteres en lugar de 237.",
+                    )
+                
+                lineas_formateadas.append(linea)
             
-            # Pos 21-35: RINID2 (MIFEEDNAME)
-            rinid2 = mifeedname.ljust(15)
+            # Unir todas las líneas con saltos de línea (newline para SAP TBD4)
+            # SAP suele requerir un salto de línea al final de cada registro si son múltiples.
+            content = "\n".join(lineas_formateadas)
             
-            # Pos 36-50: SPRPTY (RATETYPE)
-            sprpty = ratetype.ljust(15)
-            
-            # Pos 51-52: SSTATS (OK)
-            sstats = "  "  # 2 espacios
-            
-            # Pos 53-132: ERROR (80 espacios)
-            error = " " * 80
-            
-            # Pos 133-142: RSUPID (10 espacios)
-            rsupid = " " * 10
-            
-            # Pos 143-152: RCONID (10 espacios)
-            rconid = " " * 10
-            
-            # Pos 153-157: RCONCN (5 espacios)
-            rconcn = " " * 5
-            
-            # Pos 158-165: DATE
-            date_val = fecha_str  # 8 caracteres
-            
-            # Pos 166-171: TIME
-            time_val = hora_str   # 6 caracteres
-            
-            # Pos 172-191: VALUE (20 caracteres, alineado a derecha)
-            valor_str = valor_str_raw.rjust(20)
-            
-            # Pos 192-196: CURRENCY
-            currency_val = currency.ljust(5)
-            
-            # Pos 197-201: MKIND (5 espacios)
-            mkind = " " * 5
-            
-            # Pos 202-208: CFFACT (7 espacios)
-            cffact = " " * 7
-            
-            # Pos 209-215: CTFACT (7 espacios)
-            ctfact = " " * 7
-            
-            # Pos 216-227: UNAME (12 espacios)
-            uname = " " * 12
-            
-            # Pos 228-237: RZUSATZ (10 espacios)
-            rzusatz = " " * 10
-            
-            # Ensamblar la línea completa (sin newline al final aún)
-            linea = (rinid1 + rinid2 + sprpty + sstats + error + rsupid + 
-                    rconid + rconcn + date_val + time_val + valor_str + currency_val + 
-                    mkind + cffact + ctfact + uname + rzusatz)
-            
-            # Verificar que tiene exactamente 237 caracteres (sin el newline)
-            if len(linea) != 237:
-                raise HTTPException(
-                    status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                    detail=f"Error en formato: se generaron {len(linea)} caracteres en lugar de 237.",
-                )
-            
-            # Retornar texto plano sin el newline al final
-            return PlainTextResponse(content=linea)
+            # Retornar texto plano
+            return PlainTextResponse(content=content)
 
     except HTTPException:
         raise
